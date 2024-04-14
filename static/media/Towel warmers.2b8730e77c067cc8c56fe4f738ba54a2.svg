@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M87 8L87 92C87 93.6569 85.6569 95 84 95C82.3431 95 81 93.6569 81 92L81 72.5L81 36.5L81 27.5L81 8C81 6.34314 82.3431 5 84 5C85.6569 5 87 6.34315 87 8Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 31L81 31V37H65.5L40.7 37H34.5H19V31Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 47L81 47V53H65.5L40.7 53H34.5H19V47Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 63L81 63V69L65.5 69H40.7H34.5H19V63Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 79L81 79V85L65.5 85H40.7H34.5H19V79Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 15L81 15V21L65.5 21L40.7 21H34.5L19 21V15Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M29 9L45 9C46.1046 9 47 9.89543 47 11L47 56H27L27 11C27 9.89543 27.8954 9 29 9Z" fill="#F8F9FA" stroke="#5D646B" stroke-width="2"/>
+<path d="M19 9L19 91C19 92.6569 17.6569 94 16 94C14.3431 94 13 92.6569 13 91L13 72L13 36.8L13 28L13 9C13 7.34314 14.3431 6 16 6C17.6569 6 19 7.34315 19 9Z" stroke="#5D646B" stroke-width="2"/>
+<path d="M27 41.2222L29.4879 42.0499C31.3288 42.6623 33.3296 42.5849 35.1177 41.832L38.3297 40.4796C40.5526 39.5436 43.0792 39.6605 45.2062 40.7978L46 41.2222" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M27 47.2222L29.4879 48.0499C31.3288 48.6623 33.3296 48.5849 35.1177 47.832L38.3297 46.4796C40.5526 45.5436 43.0792 45.6605 45.2062 46.7978L46 47.2222" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M27 52L27 52.806L27 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M47 52L47 52.806L47 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M31 56L31 56.2687L31 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M43 56L43 56.2687L43 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M39 56L39 56.2687L39 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 56L35 56.2687L35 58" stroke="#5D646B" stroke-width="2" stroke-linecap="round"/>
+</svg>

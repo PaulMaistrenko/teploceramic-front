@@ -1,10 +1,38 @@
 {
   "files": {
-    "main.js": "/teploceramic-front/static/js/main.a25de81d.js",
+    "main.css": "/teploceramic-front/static/css/main.c0347233.css",
+    "main.js": "/teploceramic-front/static/js/main.402faace.js",
+    "static/media/accessories_exemple.png": "/teploceramic-front/static/media/accessories_exemple.b51a2d5b65576184ef68.png",
+    "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
+    "static/media/suspendet-heaters_exemple.png": "/teploceramic-front/static/media/suspendet-heaters_exemple.67d611d4798a3c7316e3.png",
+    "static/media/dehydrator_exemple.png": "/teploceramic-front/static/media/dehydrator_exemple.6ea212a96b0ebdbaac8b.png",
+    "static/media/towel-warmers_exemple.png": "/teploceramic-front/static/media/towel-warmers_exemple.dbc2eedc83daefc9e732.png",
+    "static/media/special-offers_img.png": "/teploceramic-front/static/media/special-offers_img.5a6d85ce6068c055fd59.png",
+    "static/media/main-logo_dark.svg": "/teploceramic-front/static/media/main-logo_dark.0305fedecd5101833dc2.svg",
+    "static/media/main-logo_light.svg": "/teploceramic-front/static/media/main-logo_light.6bce617520c519c90f56.svg",
+    "static/media/instagram_icon.svg": "/teploceramic-front/static/media/instagram_icon.1a2d75341b272f124257.svg",
+    "static/media/sale_icon.svg": "/teploceramic-front/static/media/sale_icon.4a0679e4e8eb898c6f68.svg",
+    "static/media/Towel warmers.svg": "/teploceramic-front/static/media/Towel warmers.2b8730e77c067cc8c56fe4f738ba54a2.svg",
+    "static/media/Dehydrators.svg": "/teploceramic-front/static/media/Dehydrators.0c253cd7de36bf3a9fcbb94e594ed3a9.svg",
+    "static/media/Heaters.svg": "/teploceramic-front/static/media/Heaters.09cf0d649232315803458eae5648f043.svg",
+    "static/media/telegram_icon.svg": "/teploceramic-front/static/media/telegram_icon.b0eafe7bbdc63741b116.svg",
+    "static/media/Suspended heaters.svg": "/teploceramic-front/static/media/Suspended heaters.dce46986b33d1ddadd8d9b27252ec985.svg",
+    "static/media/to-cart_button.svg": "/teploceramic-front/static/media/to-cart_button.3db626bc519ae89fea39.svg",
+    "static/media/cart_icon.svg": "/teploceramic-front/static/media/cart_icon.b78da25949160e6acdb9.svg",
+    "static/media/youtube_icon.svg": "/teploceramic-front/static/media/youtube_icon.7ec4a69d7fb1da51a47f.svg",
     "index.html": "/teploceramic-front/index.html",
-    "main.a25de81d.js.map": "/teploceramic-front/static/js/main.a25de81d.js.map"
+    "static/media/facebook_icon.svg": "/teploceramic-front/static/media/facebook_icon.7b2e18aac212970fbde6.svg",
+    "static/media/Accessories.svg": "/teploceramic-front/static/media/Accessories.06b1ab3986a35ef4f912e6e9b97eea9c.svg",
+    "static/media/menu-open_icon.svg": "/teploceramic-front/static/media/menu-open_icon.c58413fe70ccc5ece457.svg",
+    "static/media/close_icon.svg": "/teploceramic-front/static/media/close_icon.18aee51faf75709646fd.svg",
+    "static/media/arrow-left_icon.svg": "/teploceramic-front/static/media/arrow-left_icon.43f10275e653b32f0a29.svg",
+    "static/media/arrow-down_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-down_icon--neutralN300.39f70515db26cedfea54.svg",
+    "static/media/arrow-right_icon.svg": "/teploceramic-front/static/media/arrow-right_icon.4cc8359cf40061608a39.svg",
+    "main.c0347233.css.map": "/teploceramic-front/static/css/main.c0347233.css.map",
+    "main.402faace.js.map": "/teploceramic-front/static/js/main.402faace.js.map"
   },
   "entrypoints": [
-    "static/js/main.a25de81d.js"
+    "static/css/main.c0347233.css",
+    "static/js/main.402faace.js"
   ]
 }
