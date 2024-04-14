@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/teploceramic-front/static/css/main.c0347233.css",
-    "main.js": "/teploceramic-front/static/js/main.03aaf62a.js",
+    "main.css": "/teploceramic-front/static/css/main.cf535ad1.css",
+    "main.js": "/teploceramic-front/static/js/main.c5af3a6d.js",
     "static/media/accessories_exemple.png": "/teploceramic-front/static/media/accessories_exemple.b51a2d5b65576184ef68.png",
     "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
     "static/media/suspendet-heaters_exemple.png": "/teploceramic-front/static/media/suspendet-heaters_exemple.67d611d4798a3c7316e3.png",
@@ -28,11 +28,11 @@
     "static/media/arrow-left_icon.svg": "/teploceramic-front/static/media/arrow-left_icon.43f10275e653b32f0a29.svg",
     "static/media/arrow-down_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-down_icon--neutralN300.39f70515db26cedfea54.svg",
     "static/media/arrow-right_icon.svg": "/teploceramic-front/static/media/arrow-right_icon.4cc8359cf40061608a39.svg",
-    "main.c0347233.css.map": "/teploceramic-front/static/css/main.c0347233.css.map",
-    "main.03aaf62a.js.map": "/teploceramic-front/static/js/main.03aaf62a.js.map"
+    "main.cf535ad1.css.map": "/teploceramic-front/static/css/main.cf535ad1.css.map",
+    "main.c5af3a6d.js.map": "/teploceramic-front/static/js/main.c5af3a6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0347233.css",
-    "static/js/main.03aaf62a.js"
+    "static/css/main.cf535ad1.css",
+    "static/js/main.c5af3a6d.js"
   ]
 }
