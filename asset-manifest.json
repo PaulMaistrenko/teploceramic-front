@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/teploceramic-front/static/css/main.cf535ad1.css",
-    "main.js": "/teploceramic-front/static/js/main.c5af3a6d.js",
+    "main.css": "/teploceramic-front/static/css/main.a1d3b22b.css",
+    "main.js": "/teploceramic-front/static/js/main.381cd372.js",
     "static/media/accessories_exemple.png": "/teploceramic-front/static/media/accessories_exemple.b51a2d5b65576184ef68.png",
     "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
     "static/media/suspendet-heaters_exemple.png": "/teploceramic-front/static/media/suspendet-heaters_exemple.67d611d4798a3c7316e3.png",
@@ -19,20 +19,22 @@
     "static/media/Suspended heaters.svg": "/teploceramic-front/static/media/Suspended heaters.dce46986b33d1ddadd8d9b27252ec985.svg",
     "static/media/to-cart_button.svg": "/teploceramic-front/static/media/to-cart_button.3db626bc519ae89fea39.svg",
     "static/media/cart_icon.svg": "/teploceramic-front/static/media/cart_icon.b78da25949160e6acdb9.svg",
+    "static/media/home.svg": "/teploceramic-front/static/media/home.506cfcb4b59b93e3267b.svg",
     "static/media/youtube_icon.svg": "/teploceramic-front/static/media/youtube_icon.7ec4a69d7fb1da51a47f.svg",
     "index.html": "/teploceramic-front/index.html",
     "static/media/facebook_icon.svg": "/teploceramic-front/static/media/facebook_icon.7b2e18aac212970fbde6.svg",
     "static/media/Accessories.svg": "/teploceramic-front/static/media/Accessories.06b1ab3986a35ef4f912e6e9b97eea9c.svg",
+    "static/media/filter_button.svg": "/teploceramic-front/static/media/filter_button.61295fca40ef0196fba3.svg",
     "static/media/menu-open_icon.svg": "/teploceramic-front/static/media/menu-open_icon.c58413fe70ccc5ece457.svg",
     "static/media/close_icon.svg": "/teploceramic-front/static/media/close_icon.18aee51faf75709646fd.svg",
     "static/media/arrow-left_icon.svg": "/teploceramic-front/static/media/arrow-left_icon.43f10275e653b32f0a29.svg",
     "static/media/arrow-down_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-down_icon--neutralN300.39f70515db26cedfea54.svg",
     "static/media/arrow-right_icon.svg": "/teploceramic-front/static/media/arrow-right_icon.4cc8359cf40061608a39.svg",
-    "main.cf535ad1.css.map": "/teploceramic-front/static/css/main.cf535ad1.css.map",
-    "main.c5af3a6d.js.map": "/teploceramic-front/static/js/main.c5af3a6d.js.map"
+    "main.a1d3b22b.css.map": "/teploceramic-front/static/css/main.a1d3b22b.css.map",
+    "main.381cd372.js.map": "/teploceramic-front/static/js/main.381cd372.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf535ad1.css",
-    "static/js/main.c5af3a6d.js"
+    "static/css/main.a1d3b22b.css",
+    "static/js/main.381cd372.js"
   ]
 }
