@@ -16,7 +16,7 @@ import { HomePage } from './pages/HomePage';
 export const Root = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={ <App />}>
         <Route index element={<HomePage />} />
         <Route path="dehydrators" element={<DehydratorsPage />} />
         <Route path="heaters" element={<HeatersPage />} />
@@ -25,7 +25,7 @@ export const Root = () => (
         <Route path="accessories" element={<AccessoriesPage />} />
         <Route path="cart" element={<CartPage />} />
         <Route path="about" element={<AboutPage />} />
-      <Route />
+      </Route>
     </Routes>
   </Router>
 );
