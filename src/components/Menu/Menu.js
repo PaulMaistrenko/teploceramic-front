@@ -1,31 +1,73 @@
 import classNames from "classnames";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export const Menu = ({ isMenuOpen }) => {
+export const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <nav className={classNames('menu__page', { active : isMenuOpen })}>
         <div className="container">
           <ul className="menu__list main__text--medium">
             <li className="menu__item">
-              <NavLink to="/dehydrators" className="menu__link text-color--neutralN400">Dehydrators</NavLink>
+              <Link
+                to="/dehydrators"
+                className="menu__link text-color--neutralN400"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Dehydrators
+              </Link>
             </li>
             <li className="menu__item">
-              <NavLink to="/heaters" className="menu__link text-color--neutralN400">Heaters</NavLink>
+              <Link
+                to="/heaters"
+                className="menu__link text-color--neutralN400"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Heaters
+              </Link>
             </li>
             <li className="menu__item">
-              <NavLink to="/suspended heaters" className="menu__link text-color--neutralN400">Suspended heaters</NavLink>
+              <Link
+                to="/suspended heaters"
+                className="menu__link text-color--neutralN400"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Suspended heaters
+              </Link>
             </li>
             <li className="menu__item">
-              <NavLink to="/towel warmers" className="menu__link text-color--neutralN400">Towel warmers</NavLink>
+              <Link
+                to="/towel warmers"
+                className="menu__link text-color--neutralN400"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Towel warmers
+              </Link>
             </li>
             <li className="menu__item">
-              <NavLink to="/accessories" className="menu__link text-color--neutralN400">Accessories</NavLink>
+              <Link
+                to="/accessories"
+                className="menu__link text-color--neutralN400"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Accessories
+              </Link>
             </li>
           </ul>
           <div className="nav__bottom-actions secondary__text--regular">
             <div className="information__block">
-              <NavLink to="/about" className="menu__link text-color--neutralN300">About</NavLink>
-              <NavLink to="/help" className="menu__link text-color--neutralN300">Help</NavLink>
+              <Link
+                to="/about"
+                className="menu__link text-color--neutralN300"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                About
+              </Link>
+              <Link
+                to="/help"
+                className="menu__link text-color--neutralN300"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Help
+              </Link>
             </div>
             <button className="language-selector text-color--neutralN300">English</button>
           </div>

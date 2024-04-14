@@ -14,7 +14,10 @@ export const App = () => {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
       />
-      <Menu isMenuOpen={isMenuOpen} />
+      <Menu
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
       <main className="main-content">
         <Outlet />
       </main>
