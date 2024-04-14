@@ -1,0 +1,66 @@
+h6 {
+  font-size: 18px;
+}
+
+.main__text {
+  &--regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &--medium {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+
+.secondary__text {
+
+  &--regular {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+
+.large__text {
+  &--regular {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.extra-large__text {
+  &--medium {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+
+.text-color--neutralN100 {
+  color: $neutralN100;
+}
+
+.text-color--neutralN200 {
+  color: $neutralN200;
+}
+
+.text-color--neutralN300 {
+  color: $neutralN300;
+}
+
+.text-color--neutralN350 {
+  color: $neutralN350;
+}
+
+.text-color--neutralN400 {
+  color: $neutralN400;
+}
+
+.text-color--dangerDN500 {
+  color: $dangerDN500;
+}
