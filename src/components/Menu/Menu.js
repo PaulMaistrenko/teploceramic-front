@@ -1,7 +1,14 @@
 import classNames from "classnames";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { MainContext } from "../../context/MainContext";
 
-export const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
+export const Menu = () => {
+  const {
+    isMenuOpen,
+    setIsMenuOpen,
+  } = useContext(MainContext);
+
   return (
     <nav className={classNames('menu__page', { active : isMenuOpen })}>
         <div className="container">

@@ -1,53 +1,99 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { scrollToTop } from "../../helpers/scrollToTop";
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-          <NavLink
+          <Link
             to="/"
             className="footer__logo icon"
             onClick={scrollToTop}
           />
           <div className="socials">
-            <NavLink to="/" className="socials__icon facebook icon" />
-            <NavLink to="/" className="socials__icon instagram icon" />
-            <NavLink to="/" className="socials__icon youtube icon" />
-            <NavLink to="/" className="socials__icon telegram icon" />
+            <Link
+              to="/"
+              className="socials__icon facebook icon"
+              target="_blank"
+            />
+            <Link
+              to="/"
+              className="socials__icon instagram icon"
+              target="_blank"
+            />
+            <Link
+              to="/"
+              className="socials__icon youtube icon"
+              target="_blank"
+            />
+            <Link
+              to="/"
+              className="socials__icon telegram icon"
+              target="_blank"
+            />
           </div>
           <div className="footer__content">
             <p className="footer__title">Catalog</p>
             <ul className="footer__nav footer__catalog">
               <li className="footer__nav-item">
-                <NavLink to="/dehydrators" className="footer__nav-link">Dehydrators</NavLink>
+                <Link
+                  to="/dehydrators"
+                  className="footer__nav-link"
+                  onClick={scrollToTop}
+                >
+                  Dehydrators
+                </Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/heaters" className="footer__nav-link">Heaters</NavLink>
+                <Link
+                  to="/heaters"
+                  className="footer__nav-link"
+                  onClick={scrollToTop}
+                >
+                  Heaters
+                </Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/suspended heaters" className="footer__nav-link">Suspended heaters</NavLink>
+                <Link
+                  to="/suspended heaters"
+                  className="footer__nav-link"
+                  onClick={scrollToTop}
+                >
+                  Suspended heaters
+                </Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/towel warmers" className="footer__nav-link">Towel warmers</NavLink>
+                <Link
+                  to="/towel warmers"
+                  className="footer__nav-link"
+                  onClick={scrollToTop}
+                >
+                  Towel warmers
+                </Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/accessories" className="footer__nav-link">Accessories</NavLink>
+                <Link
+                  to="/accessories"
+                  className="footer__nav-link"
+                  onClick={scrollToTop}
+                >
+                  Accessories
+                </Link>
               </li>
             </ul>
             <p className="footer__title">Support</p>
             <ul className="footer__nav">
               <li className="footer__nav-item">
-                <NavLink to="/warranty and service" className="footer__nav-link">Warranty and service</NavLink>
+                <Link to="/warranty and service" className="footer__nav-link">Warranty and service</Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/return of goods" className="footer__nav-link">Return of goods</NavLink>
+                <Link to="/return of goods" className="footer__nav-link">Return of goods</Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/payment and delivery" className="footer__nav-link">Payment and delivery</NavLink>
+                <Link to="/payment and delivery" className="footer__nav-link">Payment and delivery</Link>
               </li>
               <li className="footer__nav-item">
-                <NavLink to="/terms and conditions" className="footer__nav-link">Terms and conditions</NavLink>
+                <Link to="/terms and conditions" className="footer__nav-link">Terms and conditions</Link>
               </li>
             </ul>
           </div>
@@ -55,13 +101,13 @@ export const Footer = () => {
             <div className="feedback">
               <p className="feedback__text">Got a question?</p>
               <p className="feedback__field-title">Contact</p>
-              <NavLink
+              <Link
                 to="/info@teploceramic.com"
                 type="email"
                 className="feedback__link"
               >
                 info@teploceramic.com
-              </NavLink>
+              </Link>
             </div>
             <p className="rights">© 2011–2024 TEPLOCERAMICA</p>
           </div>

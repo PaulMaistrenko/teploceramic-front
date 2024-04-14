@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import dehydrators from '../../assets/blocks/categories/Dehydrators.svg';
 import heaters from '../../assets/blocks/categories/Heaters.svg';
@@ -9,11 +9,14 @@ import accessories from '../../assets/blocks/categories/Accessories.svg';
 /* temporery imports */
 
 import specialOfferImg from '../../temporery-files/special-offers_img.png';
+
+
 import dehydrator from '../../temporery-files/dehydrator_exemple.png';
 import heater from '../../temporery-files/heaters_exemple.png';
 import suspendedHeater from '../../temporery-files/suspendet-heaters_exemple.png';
 import towelWarmer from '../../temporery-files/towel-warmers_exemple.png';
 import accessory from '../../temporery-files/accessories_exemple.png';
+import { scrollToTop } from "../../helpers/scrollToTop";
 
 export const HomePage = () => {
   return (
@@ -22,7 +25,7 @@ export const HomePage = () => {
       <div className="slogan__content container">
         <p className="slogan__title">Heat that gives <span>COMFORT</span> for life</p>
         <p className=" slogan__text secondary__text--regular text-color--neutralN200">Teploceramic is a Ukrainian company that specializes in the production of high-quality thermal equipment.</p>
-        <NavLink className="button" to="/">Shop Now</NavLink>
+        <Link className="button" to="/">Shop Now</Link>
       </div>
     </section>
     <section className="shop-by-category">
@@ -30,34 +33,54 @@ export const HomePage = () => {
           <h6 className="section__title">SHOP BY CATEGORY</h6>
           <ul className="category__cards">
             <li className="category__card">
-              <NavLink className="category__link" to="/dehydrators">
+              <Link
+                className="category__link"
+                to="/dehydrators"
+                onClick={scrollToTop}
+              >
                 <img src={dehydrators} alt="Dehydrators" className="category__img" />
                 <p className="category__title main__text--medium">Dehydrators</p>
-              </NavLink>
+              </Link>
             </li>
             <li className="category__card">
-              <NavLink className="category__link" to="/heaters">
+              <Link
+                className="category__link"
+                to="/heaters"
+                onClick={scrollToTop}
+              >
                 <img src={heaters} alt="Heaters" className="category__img" />
                 <p className="category__title main__text--medium">Heaters</p>
-              </NavLink>
+              </Link>
             </li>
             <li className="category__card">
-              <NavLink className="category__link" to="/suspended heaters">
+              <Link
+                className="category__link"
+                to="/suspended heaters"
+                onClick={scrollToTop}
+              >
                 <img src={suspendedHeaters} alt="Suspended heaters" className="category__img" />
                 <p className="category__title main__text--medium">Suspended heaters</p>
-              </NavLink>
+              </Link>
             </li>
             <li className="category__card">
-              <NavLink className="category__link" to="/towel warmers">
+              <Link
+                className="category__link"
+                to="/towel warmers"
+                onClick={scrollToTop}
+              >
                 <img src={towelWarmers} alt="Towel warmers" className="category__img" />
                 <p className="category__title main__text--medium">Towel warmers</p>
-              </NavLink>
+              </Link>
             </li>
             <li className="category__card">
-              <NavLink className="category__link" to="/accessories">
+              <Link
+                className="category__link"
+                to="/accessories"
+                onClick={scrollToTop}
+              >
                 <img src={accessories} alt="Accessories" className="category__img" />
                 <p className="category__title main__text--medium">Accessories</p>
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
@@ -89,7 +112,13 @@ export const HomePage = () => {
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">DEHYDRATORS</h6>
-            <NavLink className="to-all-products__link main__text--medium" to="/dehydrators">show all</NavLink>
+            <Link
+              className="to-all-products__link main__text--medium"
+              to="/dehydrators"
+              onClick={scrollToTop}
+            >
+              show all
+            </Link>
           </div>
           <ul className="product__list">
             <li className="item__card">
@@ -113,11 +142,18 @@ export const HomePage = () => {
             </li>
           </ul>
         </div>
-      </section><section className="product-category">
+      </section>
+      <section className="product-category">
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">HEATERS</h6>
-            <NavLink className="to-all-products__link main__text--medium" to="/heaters">show all</NavLink>
+            <Link
+              className="to-all-products__link main__text--medium"
+              to="/heaters"
+              onClick={scrollToTop}
+            >
+              show all
+            </Link>
           </div>
           <ul className="product__list">
             <li className="item__card">
@@ -146,7 +182,13 @@ export const HomePage = () => {
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">SUSPENDED HEATERS</h6>
-            <NavLink className="to-all-products__link main__text--medium" to="/suspended heaters">show all</NavLink>
+            <Link
+              className="to-all-products__link main__text--medium"
+              to="/suspended heaters"
+              onClick={scrollToTop}
+            >
+              show all
+            </Link>
           </div>
           <ul className="product__list">
             <li className="item__card">
@@ -175,7 +217,13 @@ export const HomePage = () => {
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">TOWEL WARMERS</h6>
-            <NavLink className="to-all-products__link main__text--medium" to="/towel warmers">show all</NavLink>
+            <Link
+              className="to-all-products__link main__text--medium"
+              to="/towel warmers"
+              onClick={scrollToTop}
+            >
+              show all
+            </Link>
           </div>
           <ul className="product__list">
             <li className="item__card">
@@ -204,7 +252,13 @@ export const HomePage = () => {
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">ACCESSORIES</h6>
-            <NavLink className="to-all-products__link main__text--medium" to="/accessories">show all</NavLink>
+            <Link
+              className="to-all-products__link main__text--medium"
+              to="/accessories"
+              onClick={scrollToTop}
+            >
+              show all
+            </Link>
           </div>
           <ul className="product__list">
             <li className="item__card">

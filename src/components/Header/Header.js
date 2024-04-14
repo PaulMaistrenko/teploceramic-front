@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { MainContext } from "../../context/MainContext";
 
-export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
+export const Header = () => {
+  const {
+    isMenuOpen,
+    setIsMenuOpen,
+  } = useContext(MainContext);
 
   return (
     <header className="header container">

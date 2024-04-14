@@ -1,5 +1,7 @@
+import { ProductList } from "../../components/ProductList";
+
 export const DehydratorsPage = () => {
   return (
-    <h1>Dehydrators</h1>
+    <ProductList />
   );
 }
