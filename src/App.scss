@@ -253,10 +253,6 @@ nav.active {
     margin-bottom: 8px;
   }
 
-  &__color {
-    margin-bottom: 32px;
-  }
-
   &__old-conditions {
     display: flex;
     gap: 8px;
@@ -314,7 +310,6 @@ nav.active {
   &__bottom {
     display: flex;
     justify-content: space-between;
-    align-items: end;
   }
 
   .item__color {
