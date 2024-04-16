@@ -4,6 +4,8 @@
 @import './styles/blocks/icon.scss';
 
 .container {
+  margin: 0 auto;
+  max-width: 1440px;
   padding-inline: 16px;
 }
 
