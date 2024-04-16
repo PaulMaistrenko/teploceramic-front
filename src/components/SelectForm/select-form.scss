@@ -1,0 +1,32 @@
+@import '../../styles/utils/_vars.scss';
+
+.select {
+  &__form {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    padding-inline: 12px;
+    margin-bottom: 8px;
+  }
+
+  &__field {
+    padding-inline: 12px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $neutralN200;
+    border-radius: 4px;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url('../../assets/icons/arrow-down_icon--neutralN300.svg');
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+}
