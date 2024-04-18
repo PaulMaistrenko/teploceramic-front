@@ -2,6 +2,7 @@
 @import './styles/utils/vars';
 @import './styles/utils/normalize';
 @import './styles/blocks/icon.scss';
+@import './styles/blocks/buttons.scss';
 
 .container {
   margin: 0 auto;
@@ -246,7 +247,6 @@ nav.active {
 }
 
 .item {
-
   &__code {
     margin-bottom: 8px;
   }

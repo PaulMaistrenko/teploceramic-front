@@ -1,0 +1,135 @@
+@import '../../styles/utils/vars';
+
+.filters {
+  &__page {
+    padding-bottom: 16px;
+    position: absolute;
+    background-color: $neutralN0;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 288px;
+    background-color: $neutralN0;
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    padding: 16px 0 24px;
+    gap: 8px;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url('../../assets/icons/arrow-left_icon.svg');
+    }
+  }
+
+  &__types-list {
+    display: flex;
+    flex-direction: column;
+    padding-block: 16px;
+    gap: 32px;
+  }
+}
+
+.filter {
+  &-type {
+    &__title {
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $primaryP500;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/icons/arrow-up_icon.svg');
+      }
+    }
+
+    &__wrapper {
+      margin-bottom: 12px;
+      padding: 8px 0 24px;
+    }
+  }
+
+  &__values {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__value {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    gap: 8px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid $neutralN300;
+      border-radius: 5px;
+    }
+  }
+}
+
+.filter {
+  &__interval {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__min-value {
+    padding: 8px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid $neutralN200;
+    border-radius: 4px;
+  }
+
+  &__max-value {
+    padding: 8px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid $neutralN200;
+    border-radius: 4px;
+  }
+
+  &__submit-button {
+    width: 64px;
+    height: 40px;
+    background-color: $neutralN100;
+    border-radius: 4px;
+  }
+
+  &-range {
+    &__bar {
+      height: 1px;
+      background-color: $neutralN200;
+    }
+
+    &__handle {
+      height: 24px;
+      width: 24px;
+      border: 1px solid $neutralN200;
+      border-radius: 50%;
+      background-color: $neutralN100;
+      transform: translateY(-50%);
+    }
+  }
+}
+

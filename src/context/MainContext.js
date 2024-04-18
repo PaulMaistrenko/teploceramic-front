@@ -7,12 +7,15 @@ export const MainContext = React.createContext({
   setCurrentPage: () => {},
   query: '',
   setQuery: () => {},
+  isFiltersPageOpen: false,
+  setIsFiltersPageOpen: () => {},
 });
 
 export const MainProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
   const [query, setQuery] = useState('');
+  const [isFiltersPageOpen, setIsFiltersPageOpen] = useState(false);
 
   const value = useMemo(
     () => ({
@@ -22,6 +25,8 @@ export const MainProvider = ({ children }) => {
       setCurrentPage,
       query,
       setQuery,
+      isFiltersPageOpen,
+      setIsFiltersPageOpen,
     }),
     [
       isMenuOpen,
@@ -30,6 +35,8 @@ export const MainProvider = ({ children }) => {
       setCurrentPage,
       query,
       setQuery,
+      isFiltersPageOpen,
+      setIsFiltersPageOpen,
     ],
   );
 
