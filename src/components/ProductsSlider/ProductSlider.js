@@ -31,6 +31,7 @@ export const ProductsSlider = () => {
             </li>
           </ul>
         </div>
+
       </div>
     </section>
   );

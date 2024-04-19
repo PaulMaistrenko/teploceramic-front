@@ -2,7 +2,7 @@ import dehydrator from '../../temporery-files/dehydrator_exemple.png';
 
 export const ProductItem = () => {
   return (
-    <li className="item__card">
+    <div className="item__card">
           <p className="item__code secondary__text--regular text-color--neutralN300">Code: FD500</p>
           <img src={dehydrator} alt="" className="item__img" />
           <div className="item__info">
@@ -20,6 +20,6 @@ export const ProductItem = () => {
             </div>
             <button className="add-to-cart__button icon"></button>
           </div>
-    </li>
+    </div>
   );
 }
