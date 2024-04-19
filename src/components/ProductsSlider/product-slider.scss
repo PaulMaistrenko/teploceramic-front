@@ -1,42 +1,46 @@
 @import '../../styles/utils/vars.scss';
 
-.pagination {
-  margin: 32px 0 64px;
-  &__content {
-    height: 40px;
+.slider {
+  &__top {
+    margin-bottom: 24px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
-
-  &__list {
+  
+  &__nav-buttons {
     display: flex;
     gap: 8px;
-    color: $neutralN200;
-  }
-
-  &__button{
-    width: 40px;
-    height: 40px;
-
-    &_active {
-      color: $primaryP500;
-      border: 1px solid $primaryP500;
-      border-radius: 4px;
-    }
   }
 
   &__nav-button {
     width: 24px;
     height: 24px;
-
-    &.prev { 
+  
+    &.prev {
       background-image: url('../../assets/icons/arrow-left_icon--neutralN300.svg');
     }
 
     &.next {
       background-image: url('../../assets/icons/arrow-right_icon--neutralN300.svg');
     }
+  }
 
+  &__screen {
+    display: flex;
+    width: 288px;
+    height: 510px;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 288px;
+
+    &.item__code {
+      text-align: end;
+    }
   }
 }

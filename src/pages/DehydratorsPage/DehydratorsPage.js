@@ -5,6 +5,7 @@ import { ProductsInfo } from "../../components/ProductsInfo";
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
 import { Pagination } from "../../components/Pagination";
+import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
 
 export const DehydratorsPage = () => {
   const {
@@ -18,6 +19,7 @@ export const DehydratorsPage = () => {
       <ProductsFilter />
       <ProductList />
       <Pagination />
+      <ProductsSlider />
     </div>
   );
 }

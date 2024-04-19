@@ -273,6 +273,7 @@ nav.active {
 
   &__code {
     margin-bottom: 8px;
+    text-align: end;
   }
 
   &__name {
@@ -344,12 +345,6 @@ nav.active {
 
   .item__price {
     margin-bottom: 0;
-  }
-}
-
-.product__list {
-  .item__code {
-    text-align: end;
   }
 }
 
@@ -477,7 +472,7 @@ nav.active {
 
 .products {
   &__page {
-    margin-bottom: 104px;
+    margin-bottom: 80px;
   }
 
   &__info {
