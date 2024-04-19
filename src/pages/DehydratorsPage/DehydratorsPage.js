@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
 import { ProductList } from "../../components/ProductList";
 import { ProductsFilter } from "../../components/ProductsFilter";
@@ -18,7 +19,7 @@ export const DehydratorsPage = () => {
   useEffect (() => {
     setCurrentPage('Dehydrators');
     scrollToTop();
-  });
+  }, []);
 
   return (
     <div className="products__page">

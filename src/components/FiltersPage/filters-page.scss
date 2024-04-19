@@ -94,16 +94,8 @@
     gap: 4px;
   }
 
-  &__min-value {
-    padding: 8px;
-    width: 80px;
-    height: 40px;
-    border: 1px solid $neutralN200;
-    border-radius: 4px;
-  }
-
-  &__max-value {
-    padding: 8px;
+  &__value {
+    text-align: center;
     width: 80px;
     height: 40px;
     border: 1px solid $neutralN200;

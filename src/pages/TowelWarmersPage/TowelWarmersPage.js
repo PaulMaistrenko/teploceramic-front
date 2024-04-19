@@ -1,5 +1,36 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useContext, useEffect } from "react";
+import { MainContext } from "../../context/MainContext";
+import { scrollToTop } from "../../helpers/scrollToTop";
+import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
+import { ProductsInfo } from "../../components/ProductsInfo";
+import { ProductsFilter } from "../../components/ProductsFilter";
+import { ProductList } from "../../components/ProductList";
+import { Pagination } from "../../components/Pagination";
+import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
+
 export const TowelWarmersPage = () => {
+  const {
+    isFiltersPageOpen,
+    currentPage,
+    setCurrentPage,
+  } = useContext(MainContext);
+
+  useEffect (() => {
+    setCurrentPage('Towel warmers');
+    scrollToTop();
+  }, []);
+
   return (
-    <h1>Towel Warmers</h1>
+    <div className="products__page">
+      {isFiltersPageOpen && <FiltersPage />}
+      <ProductsInfo
+        currentPage={currentPage}
+      />
+      <ProductsFilter />
+      <ProductList />
+      <Pagination />
+      <ProductsSlider />
+    </div>
   );
 }

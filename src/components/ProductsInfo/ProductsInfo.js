@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import './page-title.scss';
 
 export const ProductsInfo = ({ currentPage }) => {
+
   return (
     <section className="products__info">
       <div className="page__path">

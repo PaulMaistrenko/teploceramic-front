@@ -84,7 +84,8 @@ export const HomePage = () => {
             </li>
           </ul>
         </div>
-      </section><section className="special-offers">
+      </section>
+      <section className="special-offers">
         <div className="container">
           <h6 className="section__title">SPECIAL OFFERS</h6>
           <ul className="spec-cards">

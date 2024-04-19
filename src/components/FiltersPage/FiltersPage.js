@@ -220,18 +220,18 @@ export const FiltersPage = () => {
                   <input
                     type="text"
                     name="min-value"
-                    className="price__min-value"
+                    className="price__value price__min-value"
                     placeholder="000000"
                     autoComplete="off"
-                    defaultValuevalue="00000"
+                    defaultValue="00000"
                   />
                   <p>-</p>
                  <input
                     name="max-value"
-                    className="price__max-value"
+                    className="price__value price__max-value"
                     placeholder="000000"
                     autoComplete="off"
-                    defaultValuevalue="00000"
+                    defaultValue="00000"
                   />
                 </div>
                 <button className="price__submit-button text-color--neutralN400">OK</button>
