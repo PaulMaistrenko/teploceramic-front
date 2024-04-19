@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/teploceramic-front/static/css/main.a4dbe3d6.css",
-    "main.js": "/teploceramic-front/static/js/main.9e72a703.js",
+    "main.css": "/teploceramic-front/static/css/main.61f401a2.css",
+    "main.js": "/teploceramic-front/static/js/main.8d971759.js",
     "static/media/accessories_exemple.png": "/teploceramic-front/static/media/accessories_exemple.b51a2d5b65576184ef68.png",
     "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
     "static/media/suspendet-heaters_exemple.png": "/teploceramic-front/static/media/suspendet-heaters_exemple.67d611d4798a3c7316e3.png",
@@ -28,15 +28,17 @@
     "static/media/filter_button.svg": "/teploceramic-front/static/media/filter_button.61295fca40ef0196fba3.svg",
     "static/media/menu-open_icon.svg": "/teploceramic-front/static/media/menu-open_icon.c58413fe70ccc5ece457.svg",
     "static/media/close_icon.svg": "/teploceramic-front/static/media/close_icon.18aee51faf75709646fd.svg",
+    "static/media/arrow-left_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-left_icon--neutralN300.40a40aeb5da4b6055de1.svg",
     "static/media/arrow-left_icon.svg": "/teploceramic-front/static/media/arrow-left_icon.43f10275e653b32f0a29.svg",
     "static/media/arrow-up_icon.svg": "/teploceramic-front/static/media/arrow-up_icon.8e209bfb504764a4af81.svg",
     "static/media/arrow-down_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-down_icon--neutralN300.39f70515db26cedfea54.svg",
+    "static/media/arrow-right_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-right_icon--neutralN300.d9133ef5e3976903e4aa.svg",
     "static/media/arrow-right_icon.svg": "/teploceramic-front/static/media/arrow-right_icon.4cc8359cf40061608a39.svg",
-    "main.a4dbe3d6.css.map": "/teploceramic-front/static/css/main.a4dbe3d6.css.map",
-    "main.9e72a703.js.map": "/teploceramic-front/static/js/main.9e72a703.js.map"
+    "main.61f401a2.css.map": "/teploceramic-front/static/css/main.61f401a2.css.map",
+    "main.8d971759.js.map": "/teploceramic-front/static/js/main.8d971759.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4dbe3d6.css",
-    "static/js/main.9e72a703.js"
+    "static/css/main.61f401a2.css",
+    "static/js/main.8d971759.js"
   ]
 }
