@@ -214,34 +214,35 @@ export const FiltersPage = () => {
           </div>
           <div className="filter-type">
             <p className="filter-type__title large__text--medium text-color--neutralN400">Price, €</p>
-            <div className="filter-type__wrapper">
-              <form className="filter__interval">
-                <input
-                  type="text"
-                  name="min-value"
-                  className="filter__min-value"
-                  placeholder="000000"
-                  autoComplete="off"
-                  defaultValuevalue="00000"
-                />
-                <p>-</p>
-                <input
-                  type="text"
-                  name="max-value"
-                  className="filter__max-value"
-                  placeholder="000000"
-                  autoComplete="off"
-                  defaultValuevalue="00000"
-                />
-                <button className="filter__submit-button text-color--neutralN400">OK</button>
+            <div className="submit-form__wrapper">
+              <form className="price__interval">
+                <div className="price__values">
+                  <input
+                    type="text"
+                    name="min-value"
+                    className="price__min-value"
+                    placeholder="000000"
+                    autoComplete="off"
+                    defaultValuevalue="00000"
+                  />
+                  <p>-</p>
+                 <input
+                    name="max-value"
+                    className="price__max-value"
+                    placeholder="000000"
+                    autoComplete="off"
+                    defaultValuevalue="00000"
+                  />
+                </div>
+                <button className="price__submit-button text-color--neutralN400">OK</button>
               </form>
             </div>
-            <div className="filter-range">
-              <div className="filter-range__scale">
-                <div className="filter-range__bar"></div>
+            <div className="price-range">
+              <div className="price-range__scale">
+                <div className="price-range__bar"></div>
               </div>
-              <button className="filter-range__handle min"></button>
-              <button className="filter-range__handle max"></button>
+              <button className="price-range__handle min" />
+              <button className="price-range__handle max" />
             </div>
           </div>
         </div>

@@ -1,17 +1,16 @@
 import { ProductItem } from '../ProductItem';
-import './product-list.scss';
 
 export const ProductList = () => {
   return (
-    <div className="container">
-      <ul className="product__list">
+    <ul className="product__list">
+      <div className="container">
         <ProductItem />
         <ProductItem />
         <ProductItem />
         <ProductItem />
         <ProductItem />
         <ProductItem />
-      </ul>
-    </div>
+      </div>
+    </ul>
   );
 }

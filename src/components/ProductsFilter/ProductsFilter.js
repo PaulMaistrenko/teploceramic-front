@@ -10,7 +10,7 @@ export const ProductsFilter = () => {
   } = useContext(MainContext);
 
   return (
-    <div className="products__filter">
+    <section className="products__filter">
       <div className="container">
         <button
           className="filters-open__button button main__text--medium"
@@ -21,6 +21,6 @@ export const ProductsFilter = () => {
         <SearchForm />
         <SelectForm />
       </div>
-    </div>
+    </section>
   );
 }

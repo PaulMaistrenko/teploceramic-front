@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const ProductsInfo = () => {
   return (
-    <div className="products__info">
+    <section className="products__info">
       <div className="page__path">
         <Link to="/" className="home__link icon" />
         <div className="slach icon">/</div>
@@ -19,6 +19,6 @@ export const ProductsInfo = () => {
           <button className="questions__button icon"></button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -21,7 +21,11 @@ export const Header = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
           }
-          <NavLink to="/" className="header__logo icon" />
+          <NavLink
+            to="/"
+            className="header__logo icon"
+            onClick={() => setIsMenuOpen(false)}
+          />
           <NavLink to="/cart" className="cart-page__link icon"></NavLink>
         </div>
       </header>

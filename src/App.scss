@@ -247,6 +247,30 @@ nav.active {
 }
 
 .item {
+  &__card {
+    position: relative;
+    padding-inline: 16px;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+    display: block;
+    margin-inline: auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 4px;
+  }
+
+  &__type {
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    margin-bottom: 16px;
+    padding-bottom: 44px;
+    border-bottom: solid 1px $neutralN100;
+  }
+
   &__code {
     margin-bottom: 8px;
   }
@@ -321,10 +345,6 @@ nav.active {
   .item__price {
     margin-bottom: 0;
   }
-
-  /* .item__old-conditions {
-    visibility: hidden;
-  } */
 }
 
 .product__list {
@@ -348,31 +368,6 @@ nav.active {
     width: 24px;
     height: 24px;
     background-image: url('./assets/icons/arrow-right_icon.svg');
-  }
-}
-
-.item {
-  &__card {
-    position: relative;
-  }
-
-  &__img {
-    margin-bottom: 16px;
-    display: block;
-    margin-inline: auto;
-    width: 240px;
-    height: 240px;
-    border-radius: 4px;
-  }
-
-  &__type {
-    margin-bottom: 6px;
-  }
-
-  &__info {
-    margin-bottom: 16px;
-    padding-bottom: 44px;
-    border-bottom: solid 1px $neutralN100;
   }
 }
 
@@ -555,3 +550,4 @@ nav.active {
     background-image: url("./assets/icons/arrow-down_icon--neutralN300.svg");
   }
 }
+

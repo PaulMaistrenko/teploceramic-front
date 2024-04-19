@@ -54,11 +54,6 @@
         background-image: url('../../assets/icons/arrow-up_icon.svg');
       }
     }
-
-    &__wrapper {
-      margin-bottom: 12px;
-      padding: 8px 0 24px;
-    }
   }
 
   &__values {
@@ -86,11 +81,17 @@
   }
 }
 
-.filter {
+.price {
   &__interval {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__values {
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 
   &__min-value {
@@ -131,5 +132,10 @@
       transform: translateY(-50%);
     }
   }
+}
+
+.submit-form__wrapper {
+  margin-bottom: 12px;
+  padding: 8px 0 24px;
 }
 

@@ -4,6 +4,7 @@ import { ProductsFilter } from "../../components/ProductsFilter";
 import { ProductsInfo } from "../../components/ProductsInfo";
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
+import { Pagination } from "../../components/Pagination";
 
 export const DehydratorsPage = () => {
   const {
@@ -16,6 +17,7 @@ export const DehydratorsPage = () => {
       <ProductsInfo />
       <ProductsFilter />
       <ProductList />
+      <Pagination />
     </div>
   );
 }
