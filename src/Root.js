@@ -13,6 +13,7 @@ import { CartPage } from './pages/CartPage';
 import { AboutPage } from './pages/AboutPage'
 import { HomePage } from './pages/HomePage';
 import { MainProvider } from './context/MainContext';
+import { ProductDetailsPage } from './pages/ProductDetailsPage';
 
 export const Root = () => (
   <Router>
@@ -20,7 +21,10 @@ export const Root = () => (
       <Routes>
         <Route path="/" element={ <App />}>
           <Route index element={<HomePage />} />
-          <Route path="dehydrators" element={<DehydratorsPage />} />
+          <Route path="dehydrators">
+            <Route index element={<DehydratorsPage />} />
+            <Route path=":productId" element={<ProductDetailsPage />} />
+          </Route>
           <Route path="heaters" element={<HeatersPage />} />
           <Route path="suspended heaters" element={<SuspendetHeatersPage />} />
           <Route path="towel warmers" element={<TowelWarmersPage />} />

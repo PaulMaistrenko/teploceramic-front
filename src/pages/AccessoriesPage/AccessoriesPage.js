@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
 import { MainContext } from "../../context/MainContext";
 import { scrollToTop } from "../../helpers/scrollToTop";
