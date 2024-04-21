@@ -1,0 +1,37 @@
+@import '../../styles/utils/vars.scss';
+
+.back__button {
+  width: 24px;
+  height: 24px;
+  background-image: url('../../assets/icons/arrow-left_icon--neutralN300.svg');
+}
+
+.product__page-path {
+  padding: 33px 0 25px;
+  display: flex;
+  gap: 8px;
+}
+
+.product-info__nav-list {
+  padding-bottom: 15px;
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  overflow-x: hidden;
+}
+
+.product-info__item {
+  &-active {
+    text-decoration: underline;
+    color: $primaryP500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+
+.product-info__scroll-bar {
+  margin-bottom: 27px;
+  background-color: $neutralN200;
+  height: 1px;
+}

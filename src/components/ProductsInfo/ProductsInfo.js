@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import './page-title.scss';
+import { scrollToTop } from "../../helpers/scrollToTop";
 
 export const ProductsInfo = ({ currentPage }) => {
 
   return (
     <section className="products__info">
       <div className="page__path">
-        <Link to="/" className="home__link icon" />
+        <Link
+          to="/" className="home__link icon"
+          onClick={scrollToTop}
+        />
         <div className="slach icon">/</div>
         <p className="current__page">{currentPage}</p>
       </div>

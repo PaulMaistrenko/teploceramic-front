@@ -17,6 +17,7 @@ import suspendedHeater from '../../temporery-files/suspendet-heaters_exemple.png
 import towelWarmer from '../../temporery-files/towel-warmers_exemple.png';
 import accessory from '../../temporery-files/accessories_exemple.png';
 import { scrollToTop } from "../../helpers/scrollToTop";
+import { ProductItem } from "../../components/ProductItem";
 
 export const HomePage = () => {
   return (
@@ -25,7 +26,7 @@ export const HomePage = () => {
       <div className="slogan__content container">
         <p className="slogan__title">Heat that gives <span>COMFORT</span> for life</p>
         <p className=" slogan__text secondary__text--regular text-color--neutralN200">Teploceramic is a Ukrainian company that specializes in the production of high-quality thermal equipment.</p>
-        <Link className="button" to="/">Shop Now</Link>
+        <Link className="button main__button-primary main__button-primary_extra-small" to="/">Shop Now</Link>
       </div>
     </section>
     <section className="shop-by-category">
@@ -101,7 +102,7 @@ export const HomePage = () => {
                 </div>
                 <p className="item__price">349 €</p>
               </div>
-              <button className="button">Buy Now</button>
+              <button className="button main__button-primary main__button-primary_extra-small">Buy Now</button>
             </li>
             <div className="nav__buttons">
               <button className="prev icon"></button>
@@ -109,7 +110,8 @@ export const HomePage = () => {
             </div>
           </ul>
         </div>
-      </section><section className="product-category">
+      </section>
+      <section className="product-category">
         <div className="container">
           <div className="product-category__top">
             <h6 className="category__title">DEHYDRATORS</h6>
@@ -121,27 +123,7 @@ export const HomePage = () => {
               show all
             </Link>
           </div>
-          <ul className="product__list">
-            <li className="item__card">
-              <p className="item__code secondary__text--regular text-color--neutralN300">Code: FD500</p>
-              <img src={dehydrator} alt="" className="item__img" />
-              <div className="item__info">
-                <p className="item__type main__text--medium text-color--neutralN350">Dehydrator</p>
-                <p className="item__name extra-large__text--medium text-color--neutralN400">Teploceramic FD500 </p>
-                <p className="item__color secondary__text--regular text-color--neutralN350">Silver</p>
-              </div>
-              <div className="product-category__bottom">
-                <div className="product-price__wrapper">
-                  <div className="item__old-conditions">
-                    <p className="item__old-price secondary__text--regular text-color--neutralN300">450 €</p>
-                    <p className="item__discount secondary__text--regular text-color--dangerDN500">-35%</p>
-                  </div>
-                  <p className="item__price">210 €</p>
-                </div>
-                <button className="add-to-cart__button icon"></button>
-              </div>
-            </li>
-          </ul>
+          <ProductItem />
         </div>
       </section>
       <section className="product-category">
@@ -192,7 +174,7 @@ export const HomePage = () => {
             </Link>
           </div>
           <ul className="product__list">
-            <li className="item__card">
+            <div className="item__card">
               <p className="item__code secondary__text--regular text-color--neutralN300">Code: TP1-07</p>
               <img src={suspendedHeater} alt="" className="item__img" />
               <div className="sale__label icon"></div>
@@ -211,7 +193,7 @@ export const HomePage = () => {
                 </div>
                 <button className="add-to-cart__button icon"></button>
               </div>
-            </li>
+            </div>
           </ul>
         </div>
       </section><section className="product-category">

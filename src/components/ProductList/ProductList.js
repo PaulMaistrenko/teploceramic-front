@@ -1,4 +1,5 @@
 import { ProductItem } from '../ProductItem';
+import './product-list.scss';
 
 export const ProductList = () => {
   return (

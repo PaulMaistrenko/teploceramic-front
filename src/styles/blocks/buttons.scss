@@ -1,45 +1,107 @@
 @import '../utils/_vars.scss';
 
-.primary__button {
-  background-color: $primaryP500;
-  width: 256px;
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-
-  &-large {
-    height: 52px;
-  }
-
-  &-medium {
-    height: 48px;
-  }
-
-  &-small {
-    height: 44px;
-  }
-
-  &-extra-small {
-    height: 40px;
-  }
 }
 
-.secondary__button {
-  background-color: $neutralN100;
-  width: 256px;
-  border-radius: 4px;
+.main__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
 
-  &-large {
-    height: 52px;
+  &-primary {
+    background-color: $primaryP500;
+    color: $neutralN0;
+
+    &_large {
+      height: 52px;
+    }
+
+    &_medium {
+      height: 48px;
+    }
+
+    &_small {
+      height: 44px;
+    }
+
+    &_extra-small {
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $primaryP600;
+    }
+
+    &:focus {
+      background-color: $primaryP700;
+    }
+
+    &_disabled {
+      background-color: $primaryP200;
+      color: $primaryP300;
+    }
   }
 
-  &-medium {
-    height: 48px;
+  &-secondary {
+    background-color: $neutralN100;
+    color: $neutralN400;
+
+    &_large {
+      height: 52px;
+    }
+
+    &_medium {
+      height: 48px;
+    }
+
+    &_small {
+      height: 44px;
+    }
+
+    &_extra-small {
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $neutralN200;
+    }
+
+    &:focus {
+      background-color: $neutralN300;
+    }
+
+    &_disabled {
+      background-color: $neutralN50;
+      color: $neutralN200;
+    }
   }
 
-  &-small {
-    height: 44px;
-  }
+  &-tertiary {
+    background-color: $neutralN0;
+    color: $neutralN400;
 
-  &-extra-small {
-    height: 40px;
+    &_large {
+      height: 52px;
+    }
+
+    &_medium {
+      height: 48px;
+    }
+
+    &_small {
+      height: 44px;
+    }
+
+    &_extra-small {
+      height: 40px;
+    }
+
+    &_disabled {
+      color: $neutralN200;
+    }
   }
 }

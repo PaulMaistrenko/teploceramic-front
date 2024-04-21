@@ -9,7 +9,7 @@ import { ProductList } from "../../components/ProductList";
 import { Pagination } from "../../components/Pagination";
 import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
 
-export const SuspendetHeatersPage = () => {
+export const SuspendedHeatersPage = () => {
   const {
     isFiltersPageOpen,
     currentPage,
@@ -17,7 +17,7 @@ export const SuspendetHeatersPage = () => {
   } = useContext(MainContext);
 
   useEffect (() => {
-    setCurrentPage('Suspendet heaters');
+    setCurrentPage('Suspended heaters');
     scrollToTop();
   }, []);
   

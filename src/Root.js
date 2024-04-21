@@ -6,7 +6,7 @@ import {
 import { App } from './App';
 import { DehydratorsPage } from './pages/DehydratorsPage';
 import { HeatersPage } from './pages/HeatersPage';
-import { SuspendetHeatersPage } from './pages/SuspendetHeatersPage';
+import { SuspendedHeatersPage } from './pages/SuspendedHeatersPage';
 import { TowelWarmersPage } from './pages/TowelWarmersPage';
 import { AccessoriesPage } from './pages/AccessoriesPage';
 import { CartPage } from './pages/CartPage';
@@ -25,10 +25,22 @@ export const Root = () => (
             <Route index element={<DehydratorsPage />} />
             <Route path=":productId" element={<ProductDetailsPage />} />
           </Route>
-          <Route path="heaters" element={<HeatersPage />} />
-          <Route path="suspended heaters" element={<SuspendetHeatersPage />} />
-          <Route path="towel warmers" element={<TowelWarmersPage />} />
-          <Route path="accessories" element={<AccessoriesPage />} />
+          <Route path="heaters">
+            <Route index element={<HeatersPage />} />
+            <Route path=":productId" element={<ProductDetailsPage />} />
+          </Route>
+          <Route path="suspended heaters">
+            <Route index element={<SuspendedHeatersPage />} />
+            <Route path=":productId" element={<ProductDetailsPage />} />
+          </Route>
+          <Route path="towel warmers">
+            <Route index element={<TowelWarmersPage />} />
+            <Route path=":productId" element={<ProductDetailsPage />} />
+          </Route>
+          <Route path="accessories">
+            <Route index element={<AccessoriesPage />} />
+            <Route path=":productId" element={<ProductDetailsPage />} />
+          </Route>
           <Route path="cart" element={<CartPage />} />
           <Route path="about" element={<AboutPage />} />
         </Route>

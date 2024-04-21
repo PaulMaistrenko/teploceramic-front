@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import dehydrator from '../../temporery-files/dehydrator_exemple.png';
 import { useContext } from 'react';
 import { MainContext } from '../../context/MainContext';
+import './product-item.scss';
+import { scrollToTop } from '../../helpers/scrollToTop';
 
 export const ProductItem = () => {
   const {
@@ -13,8 +15,12 @@ export const ProductItem = () => {
   const itemId = 1;
 
   return (
-    <div className="item__card">
-      <Link to={`/${currentPage.toLowerCase()}/${itemId}`}>
+    <>
+      <Link
+        to={`/${currentPage.toLowerCase()}/${itemId}`}
+        className="product-details__link"
+        onClick={scrollToTop}
+      >
         <p className="item__code secondary__text--regular text-color--neutralN300">Code: FD500</p>
         <img src={dehydrator} alt="" className="item__img" />
         <div className="item__info">
@@ -33,6 +39,6 @@ export const ProductItem = () => {
         </div>
         <button className="add-to-cart__button icon"></button>
       </div>
-    </div>
+    </>
   );
 }

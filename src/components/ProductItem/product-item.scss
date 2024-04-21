@@ -1,0 +1,57 @@
+@import '../../styles/utils/vars.scss';
+
+.item {
+  &__card {
+    position: relative;
+    padding-inline: 16px;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+    display: block;
+    margin-inline: auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 4px;
+  }
+
+  &__type {
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    margin-bottom: 16px;
+    padding-bottom: 44px;
+    border-bottom: solid 1px $neutralN100;
+  }
+
+  &__code {
+    margin-bottom: 8px;
+    text-align: end;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+  }
+
+  &__old-conditions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__old-price {
+    text-decoration: line-through;
+  }
+
+  &__price {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
+
+.product-details__link {
+  display: block;
+}

@@ -13,7 +13,7 @@ export const ProductsFilter = () => {
     <section className="products__filter">
       <div className="container">
         <button
-          className="filters-open__button button main__text--medium"
+          className="filters-open__button button main__button-primary main__button-primary_small"
           onClick={() => setIsFiltersPageOpen(true)}
         >
           Filters

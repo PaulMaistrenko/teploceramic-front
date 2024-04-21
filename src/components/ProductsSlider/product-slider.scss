@@ -27,17 +27,19 @@
 
   &__screen {
     display: flex;
-    width: 288px;
+    margin: 0 auto;
     height: 510px;
+    width: 322px;
     overflow: hidden;
   }
 
   &__list {
     display: flex;
+    gap: 16px;
   }
 
   &__item {
-    width: 288px;
+    width: 322px;
 
     &.item__code {
       text-align: end;
