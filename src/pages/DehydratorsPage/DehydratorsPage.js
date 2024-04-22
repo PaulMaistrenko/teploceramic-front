@@ -2,7 +2,7 @@
 import { useContext, useEffect } from "react";
 import { ProductList } from "../../components/ProductList";
 import { ProductsFilter } from "../../components/ProductsFilter";
-import { ProductsInfo } from "../../components/ProductsInfo";
+import { CategoryInfo } from "../../components/CategoryInfo";
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
 import { Pagination } from "../../components/Pagination";
@@ -24,7 +24,7 @@ export const DehydratorsPage = () => {
   return (
     <div className="products__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <ProductsInfo
+      <CategoryInfo
         currentPage={currentPage}
       />
       <ProductsFilter />

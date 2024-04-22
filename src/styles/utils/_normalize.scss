@@ -1,5 +1,11 @@
 h6 {
-  font-size: 18px;
+  &.medium {
+    &_line-height--120 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+    }
+  }
 }
 
 .main__text {

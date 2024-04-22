@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { ProductsInfo } from "../../components/ProductsInfo";
+import { CategoryInfo } from "../../components/CategoryInfo";
 import { MainContext } from "../../context/MainContext";
 import { scrollToTop } from "../../helpers/scrollToTop";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
@@ -23,7 +23,7 @@ export const HeatersPage = () => {
   return (
     <div className="products__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <ProductsInfo
+      <CategoryInfo
         currentPage={currentPage}
       />
       <ProductsFilter />

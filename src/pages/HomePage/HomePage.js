@@ -11,7 +11,6 @@ import accessories from '../../assets/blocks/categories/Accessories.svg';
 import specialOfferImg from '../../temporery-files/special-offers_img.png';
 
 
-import dehydrator from '../../temporery-files/dehydrator_exemple.png';
 import heater from '../../temporery-files/heaters_exemple.png';
 import suspendedHeater from '../../temporery-files/suspendet-heaters_exemple.png';
 import towelWarmer from '../../temporery-files/towel-warmers_exemple.png';

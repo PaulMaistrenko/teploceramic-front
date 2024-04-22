@@ -3,6 +3,8 @@ import './product-details-page.scss';
 import { useContext, useState } from 'react';
 import { MainContext } from '../../context/MainContext';
 import { detailTypes } from '../../variables';
+import classNames from 'classnames';
+import { ProductDetailsCard } from '../../components/ProductDetailsCard';
 
 export const ProductDetailsPage = () => {
   const {
@@ -30,7 +32,11 @@ export const ProductDetailsPage = () => {
             <li className="product-info__item" key={detail}>
               <button
                 type="button"
-                className="product-info__item-handler product-info__item-active"
+                className={
+                  classNames(
+                    "product-info__item-handler", { selected: detail === typeProductDetail },
+                  )
+                }
                 onClick={() => setTypeProductDetail(detail)}
               >
                 {detail}
@@ -41,6 +47,7 @@ export const ProductDetailsPage = () => {
         </ul>
         <div className="product-info__scroll-bar"></div>
       </div>
+      <ProductDetailsCard />
     </div>
   );
 }
