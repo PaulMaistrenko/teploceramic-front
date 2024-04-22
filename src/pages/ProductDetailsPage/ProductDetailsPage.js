@@ -5,6 +5,7 @@ import { MainContext } from '../../context/MainContext';
 import { detailTypes } from '../../variables';
 import classNames from 'classnames';
 import { ProductDetailsCard } from '../../components/ProductDetailsCard';
+import { DescriptionInfoBlock } from '../../components/DescriptionInfoBlock/DescriptionInfoBlock';
 
 export const ProductDetailsPage = () => {
   const {
@@ -48,6 +49,7 @@ export const ProductDetailsPage = () => {
         <div className="product-info__scroll-bar"></div>
       </div>
       <ProductDetailsCard />
+      <DescriptionInfoBlock />
     </div>
   );
 }

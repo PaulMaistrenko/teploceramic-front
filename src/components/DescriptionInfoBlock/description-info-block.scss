@@ -1,0 +1,21 @@
+.description{
+  &__info-block {
+    margin-bottom: 64px;
+  }
+  &__block-title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.product__description {
+  margin-bottom: 16px;
+}
+
+.advantages__list, .advantage__item {
+  list-style: inside;
+}
+
+.advantage__item {
+  margin-left: 10px;
+}
