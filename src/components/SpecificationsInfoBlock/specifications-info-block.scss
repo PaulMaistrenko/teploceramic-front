@@ -1,0 +1,26 @@
+.specifications__info-block {
+  margin-bottom: 64px;
+}
+
+.specifications__block {
+  &-title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.options__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.options-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.option {
+  width: 50%;
+}

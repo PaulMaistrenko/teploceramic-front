@@ -8,6 +8,7 @@ import { ProductDetailsCard } from '../../components/ProductDetailsCard';
 import { DescriptionInfoBlock } from '../../components/DescriptionInfoBlock/DescriptionInfoBlock';
 import { ProductsSlider } from '../../components/ProductsSlider/ProductSlider';
 import { QuestionsBlock } from '../../components/QuestionsBlock';
+import { SpecificationsInfoBlock } from '../../components/SpecificationsInfoBlock/SpecificationInfoBlock';
 
 export const ProductDetailsPage = () => {
   const {
@@ -51,7 +52,8 @@ export const ProductDetailsPage = () => {
         <div className="product-info__scroll-bar"></div>
       </div>
       <ProductDetailsCard detailType={detailType} />
-      <DescriptionInfoBlock />
+      {detailType === 'Description' && <DescriptionInfoBlock />}
+      {detailType === 'Specifications' && <SpecificationsInfoBlock />}
       <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
       <ProductsSlider title="RECOMENDED PRODUCTS" />
       <QuestionsBlock />
