@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import './CategoryInfo.scss';
 import { scrollToTop } from "../../helpers/scrollToTop";
 
 export const CategoryInfo = ({ currentPage }) => {
@@ -14,16 +13,16 @@ export const CategoryInfo = ({ currentPage }) => {
         <div className="slach icon">/</div>
         <p className="current__page">{currentPage}</p>
       </div>
-    <h6 className="page__title text-color--primaryP500">{currentPage}</h6>
-      <div className="questions__block">
-        <div className="questions__item">
-          <div className="question__text large__text--regular">{`What is a ${currentPage.toLowerCase()}?`}</div>
-          <button className="questions__button icon"></button>
-        </div>
-        <div className="questions__item">
-          <div className="question__text large__text--regular">{`What types of ${currentPage.toLowerCase()} are there?`}</div>
-          <button className="questions__button icon"></button>
-        </div>
+      <div className="container">
+        <h6 className="section__title medium_line-height--120 text-color--primaryP500">{currentPage}</h6>
+        <ul className="questions__list large__text--regular text-color--neutralN300">
+          <li className="questions-list__item">
+            <button className="question__button">What is a dehydrator?</button>
+          </li>
+          <li className="questions-list__item">
+            <button className="question__button">What types of dehydrators are there?</button>
+          </li>
+        </ul>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ export const QuestionsBlock = () => {
             <button className="question__button">What is a dehydrator?</button>
           </li>
           <li className="questions-list__item questions-list__item--selected">
-            <button className="question__button">What is a dehydrator?</button>
+            <button className="question__button">More information</button>
           </li>
         </ul>
       </div>
