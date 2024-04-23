@@ -105,3 +105,107 @@
     }
   }
 }
+
+.icon__button {
+  &-primary {
+    background-color: $primaryP500;
+
+    &_large {
+      width: 52px;
+      height: 52px;
+    }
+
+    &_medium {
+      width: 48px;
+      height: 48px;
+    }
+
+    &_small {
+      width: 44px;
+      height: 44px;
+    }
+
+    &_extra-small {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $primaryP600;
+    }
+
+    &:focus {
+      background-color: $primaryP700;
+    }
+
+    &_disabled {
+      background-color: $primaryP200;
+      color: $primaryP300;
+    }
+  }
+
+  &-secondary {
+    background-color: $neutralN100;
+
+    &_large {
+      width: 52px;
+      height: 52px;
+    }
+
+    &_medium {
+      width: 48px;
+      height: 48px;
+    }
+
+    &_small {
+      width: 44px;
+      height: 44px;
+    }
+
+    &_extra-small {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $neutralN200;
+    }
+
+    &:focus {
+      background-color: $neutralN300;
+    }
+
+    &_disabled {
+      background-color: $neutralN50;
+      color: $neutralN200;
+    }
+  }
+
+  &-tertiary {
+    background-color: $neutralN0;
+
+    &_large {
+      width: 52px;
+      height: 52px;
+    }
+
+    &_medium {
+      width: 48px;
+      height: 48px;
+    }
+
+    &_small {
+      width: 44px;
+      height: 44px;
+    }
+
+    &_extra-small {
+      width: 40px;
+      height: 40px;
+    }
+
+    &_disabled {
+      color: $neutralN200;
+    }
+  }
+}

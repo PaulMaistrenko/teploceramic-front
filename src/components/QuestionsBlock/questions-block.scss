@@ -1,0 +1,37 @@
+@import '../../styles/utils/vars.scss';
+
+.questions__section {
+  padding-block: 32px;
+  background-color: $neutralN500;
+}
+
+.question__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/icons/arrow-down_icon--neutralN300.svg');
+  }
+}
+
+.questions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.questions-list__item {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $neutralN300;
+
+  &--selected {
+    color: $primaryP500;
+    border-color: $primaryP500;
+  }
+}

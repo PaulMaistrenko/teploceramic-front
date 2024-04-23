@@ -30,7 +30,7 @@ export const AccessoriesPage = () => {
       <ProductsFilter />
       <ProductList />
       <Pagination />
-      <ProductsSlider />
+      <ProductsSlider title="RECOMENDED PRODUCTS" />
     </div>
   );
 }

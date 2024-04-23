@@ -1,25 +1,27 @@
 import dehydrator from '../../temporery-files/dehydrator_exemple.png';
 import './product-details-card.scss';
 
-export const ProductDetailsCard = () => {
+export const ProductDetailsCard = ({ detailType }) => {
   return (
     <div className="product__details-card">
       <img src={dehydrator} alt="" className="details-card__selected-image" />
       <div className="details-card__images">
-        <ul className="details-card__images-list">
-          <li className="details-card__images-item">
-            <img src={dehydrator} alt="" className="details-card__image" />
-          </li>
-          <li className="details-card__images-item">
-            <img src={dehydrator} alt="" className="details-card__image" />
-          </li>
-          <li className="details-card__images-item">
-            <img src={dehydrator} alt="" className="details-card__image" />
-          </li>
-          <li className="details-card__images-item">
-            <img src={dehydrator} alt="" className="details-card__image" />
-          </li>
-        </ul>
+        {detailType === 'About the product' && (
+          <ul className="details-card__images-list">
+            <li className="details-card__images-item">
+              <img src={dehydrator} alt="" className="details-card__image" />
+            </li>
+            <li className="details-card__images-item">
+              <img src={dehydrator} alt="" className="details-card__image" />
+            </li>
+            <li className="details-card__images-item">
+              <img src={dehydrator} alt="" className="details-card__image" />
+            </li>
+            <li className="details-card__images-item">
+              <img src={dehydrator} alt="" className="details-card__image" />
+            </li>
+          </ul>
+        )}
       </div>
       <div className="container">
         <p className="product__code secondary__text--regular text-color--neutralN300">Code: FD500</p>

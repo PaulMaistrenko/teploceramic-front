@@ -29,7 +29,7 @@ export const HeatersPage = () => {
       <ProductsFilter />
       <ProductList />
       <Pagination />
-      <ProductsSlider />
+      <ProductsSlider title="RECOMENDED PRODUCTS" />
     </div>
   );
 }

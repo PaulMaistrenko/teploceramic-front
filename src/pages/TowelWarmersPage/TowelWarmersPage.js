@@ -30,7 +30,7 @@ export const TowelWarmersPage = () => {
       <ProductsFilter />
       <ProductList />
       <Pagination />
-      <ProductsSlider />
+      <ProductsSlider title="RECOMENDED PRODUCTS" />
     </div>
   );
 }

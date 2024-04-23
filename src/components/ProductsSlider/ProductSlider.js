@@ -1,12 +1,12 @@
 import { ProductItem } from '../ProductItem';
 import './product-slider.scss';
 
-export const ProductsSlider = () => {
+export const ProductsSlider = ({ title }) => {
   return (
     <section className="products__slider">
       <div className="container">
         <div className="slider__top">
-          <div className="slider__title large__text--regular text-color--neutralN500">RECOMENDED PRODUCTS</div>
+          <div className="slider__title large__text--regular text-color--neutralN500">{title}</div>
           <div className="slider__nav-buttons">
             <button className="slider__nav-button prev icon" />
             <button className="slider__nav-button next icon" />
@@ -31,7 +31,6 @@ export const ProductsSlider = () => {
             </li>
           </ul>
         </div>
-
       </div>
     </section>
   );

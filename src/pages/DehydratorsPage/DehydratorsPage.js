@@ -8,6 +8,7 @@ import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
 import { Pagination } from "../../components/Pagination";
 import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
 import { scrollToTop } from "../../helpers/scrollToTop";
+import { QuestionsBlock } from "../../components/QuestionsBlock";
 
 export const DehydratorsPage = () => {
   const {
@@ -30,7 +31,8 @@ export const DehydratorsPage = () => {
       <ProductsFilter />
       <ProductList />
       <Pagination />
-      <ProductsSlider />
+      <ProductsSlider title="RECOMENDED PRODUCTS" />
+      <QuestionsBlock />
     </div>
   );
 }

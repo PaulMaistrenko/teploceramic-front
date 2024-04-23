@@ -15,7 +15,7 @@ export const ProductItem = () => {
   const itemId = 1;
 
   return (
-    <>
+    <div className="priduct__item">
       <Link
         to={`/${currentPage.toLowerCase()}/${itemId}`}
         className="product-details__link"
@@ -37,8 +37,8 @@ export const ProductItem = () => {
           </div>
           <p className="item__price">210 €</p>
         </div>
-        <button className="add-to-cart__button icon"></button>
+        <button className="cart__icon icon button icon__button-primary icon__button-primary_medium"></button>
       </div>
-    </>
+    </div>
   );
 }

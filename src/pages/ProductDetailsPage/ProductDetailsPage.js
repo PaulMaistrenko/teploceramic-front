@@ -6,6 +6,8 @@ import { detailTypes } from '../../variables';
 import classNames from 'classnames';
 import { ProductDetailsCard } from '../../components/ProductDetailsCard';
 import { DescriptionInfoBlock } from '../../components/DescriptionInfoBlock/DescriptionInfoBlock';
+import { ProductsSlider } from '../../components/ProductsSlider/ProductSlider';
+import { QuestionsBlock } from '../../components/QuestionsBlock';
 
 export const ProductDetailsPage = () => {
   const {
@@ -13,10 +15,10 @@ export const ProductDetailsPage = () => {
   } = useContext(MainContext);
 
   const navigate = useNavigate();
-  const [typeProductDetail, setTypeProductDetail] = useState('About the product');
+  const [detailType, setDetailType] = useState('About the product');
 
   return (
-    <div className="product__page">
+    <div className="product__details-page">
       <div className="container">
         <div className="product__page-path">
           <button
@@ -35,10 +37,10 @@ export const ProductDetailsPage = () => {
                 type="button"
                 className={
                   classNames(
-                    "product-info__item-handler", { selected: detail === typeProductDetail },
+                    "product-info__item-handler", { selected: detail === detailType },
                   )
                 }
-                onClick={() => setTypeProductDetail(detail)}
+                onClick={() => setDetailType(detail)}
               >
                 {detail}
               </button>
@@ -48,8 +50,11 @@ export const ProductDetailsPage = () => {
         </ul>
         <div className="product-info__scroll-bar"></div>
       </div>
-      <ProductDetailsCard />
+      <ProductDetailsCard detailType={detailType} />
       <DescriptionInfoBlock />
+      <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
+      <ProductsSlider title="RECOMENDED PRODUCTS" />
+      <QuestionsBlock />
     </div>
   );
 }
