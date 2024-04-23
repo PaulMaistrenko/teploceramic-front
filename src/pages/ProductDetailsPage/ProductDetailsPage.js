@@ -9,6 +9,7 @@ import { DescriptionInfoBlock } from '../../components/DescriptionInfoBlock/Desc
 import { ProductsSlider } from '../../components/ProductsSlider/ProductSlider';
 import { QuestionsBlock } from '../../components/QuestionsBlock';
 import { SpecificationsInfoBlock } from '../../components/SpecificationsInfoBlock/SpecificationInfoBlock';
+import { AvailabilityBlock } from '../../components/AvailabilityBlock/AvailabilityBlock';
 
 export const ProductDetailsPage = () => {
   const {
@@ -54,6 +55,7 @@ export const ProductDetailsPage = () => {
       <ProductDetailsCard detailType={detailType} />
       {detailType === 'Description' && <DescriptionInfoBlock />}
       {detailType === 'Specifications' && <SpecificationsInfoBlock />}
+      {detailType === 'Availability' && <AvailabilityBlock />}
       <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
       <ProductsSlider title="RECOMENDED PRODUCTS" />
       <QuestionsBlock />

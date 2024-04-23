@@ -29,6 +29,12 @@ h6 {
     font-weight: 400;
     line-height: 145%;
   }
+
+  &--medium {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 145%;
+  }
 }
 
 .large__text {
@@ -83,4 +89,8 @@ h6 {
 
 .text-color--primaryP500 {
   color: $primaryP500;
+}
+
+.text-color--successSC90 {
+  color: $successSC90;
 }
