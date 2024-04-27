@@ -13,7 +13,6 @@ import { QuestionsBlock } from "../../components/QuestionsBlock";
 export const DehydratorsPage = () => {
   const {
     isFiltersPageOpen,
-    currentPage,
     setCurrentPage,
   } = useContext(MainContext);
 
@@ -25,9 +24,7 @@ export const DehydratorsPage = () => {
   return (
     <div className="products__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <CategoryInfo
-        currentPage={currentPage}
-      />
+      <CategoryInfo />
       <ProductsFilter />
       <ProductList />
       <Pagination />

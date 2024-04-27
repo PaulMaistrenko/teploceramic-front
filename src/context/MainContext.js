@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 export const MainContext = React.createContext({
   isMenuOpen: false,
   setIsMenuOpen: () => {},
-  currentPage: 'home',
+  currentPage: 'Home',
   setCurrentPage: () => {},
   query: '',
   setQuery: () => {},
@@ -13,7 +13,7 @@ export const MainContext = React.createContext({
 
 export const MainProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('Home');
   const [query, setQuery] = useState('');
   const [isFiltersPageOpen, setIsFiltersPageOpen] = useState(false);
 

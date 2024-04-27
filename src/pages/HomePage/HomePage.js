@@ -17,8 +17,22 @@ import towelWarmer from '../../temporery-files/towel-warmers_exemple.png';
 import accessory from '../../temporery-files/accessories_exemple.png';
 import { scrollToTop } from "../../helpers/scrollToTop";
 import { ProductItem } from "../../components/ProductItem";
+import { useContext, useEffect } from "react";
+import { MainContext } from "../../context/MainContext";
 
 export const HomePage = () => {
+
+  const {
+    setCurrentPage,
+  } = useContext(MainContext);
+  
+  useEffect(() => {
+    setCurrentPage('Home');
+    scrollToTop();
+  }, []);
+
+  console.log('HomePage');
+
   return (
     <div className="home__page">
     <section className="slogan">

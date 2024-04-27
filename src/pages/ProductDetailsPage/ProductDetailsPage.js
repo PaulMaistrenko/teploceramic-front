@@ -10,6 +10,7 @@ import { ProductsSlider } from '../../components/ProductsSlider/ProductSlider';
 import { QuestionsBlock } from '../../components/QuestionsBlock';
 import { SpecificationsInfoBlock } from '../../components/SpecificationsInfoBlock/SpecificationInfoBlock';
 import { AvailabilityBlock } from '../../components/AvailabilityBlock/AvailabilityBlock';
+import { ShipingAndPaymentBlock } from '../../components/ShipingAndPaymentBlock/ShipingAndPaymentBlock';
 
 export const ProductDetailsPage = () => {
   const {
@@ -18,6 +19,7 @@ export const ProductDetailsPage = () => {
 
   const navigate = useNavigate();
   const [detailType, setDetailType] = useState('About the product');
+
 
   return (
     <div className="product__details-page">
@@ -53,9 +55,10 @@ export const ProductDetailsPage = () => {
         <div className="product-info__scroll-bar"></div>
       </div>
       <ProductDetailsCard detailType={detailType} />
-      {detailType === 'Description' && <DescriptionInfoBlock />}
-      {detailType === 'Specifications' && <SpecificationsInfoBlock />}
+      {(detailType === 'Description' || detailType === 'About the product') && <DescriptionInfoBlock />}
+      {(detailType === 'Specifications' || detailType === 'About the product') && <SpecificationsInfoBlock />}
       {detailType === 'Availability' && <AvailabilityBlock />}
+      {detailType === 'Shipping and payment' && <ShipingAndPaymentBlock />}
       <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
       <ProductsSlider title="RECOMENDED PRODUCTS" />
       <QuestionsBlock />

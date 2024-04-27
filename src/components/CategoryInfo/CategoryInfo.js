@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../helpers/scrollToTop";
+import { useContext } from "react";
+import { MainContext } from "../../context/MainContext";
 
-export const CategoryInfo = ({ currentPage }) => {
+export const CategoryInfo = () => {
+  const {currentPage} = useContext(MainContext)
 
   return (
     <section className="products__info">

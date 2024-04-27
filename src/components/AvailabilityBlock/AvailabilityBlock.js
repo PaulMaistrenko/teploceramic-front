@@ -2,7 +2,7 @@ import './availability-block.scss';
 
 export const AvailabilityBlock = () => {
   return (
-    <div className="availability__info-block">
+    <section className="availability__info-block">
       <div className="container">
         <p className="description__block-title large__text--medium text-color--neutralN500">AVAILABILITY</p>
         <div className="storage-areas__buttons">
@@ -48,6 +48,6 @@ export const AvailabilityBlock = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
