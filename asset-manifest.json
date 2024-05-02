@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/teploceramic-front/static/css/main.270a6063.css",
+    "main.css": "/teploceramic-front/static/css/main.52f05aff.css",
     "main.js": "/teploceramic-front/static/js/main.84d96c20.js",
     "static/media/accessories_exemple.png": "/teploceramic-front/static/media/accessories_exemple.b51a2d5b65576184ef68.png",
     "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
@@ -36,11 +36,11 @@
     "static/media/arrow-down_icon.svg": "/teploceramic-front/static/media/arrow-down_icon.ad531fdab7dbca2f97b9.svg",
     "static/media/arrow-right_icon--neutralN300.svg": "/teploceramic-front/static/media/arrow-right_icon--neutralN300.d9133ef5e3976903e4aa.svg",
     "static/media/arrow-right_icon.svg": "/teploceramic-front/static/media/arrow-right_icon.4cc8359cf40061608a39.svg",
-    "main.270a6063.css.map": "/teploceramic-front/static/css/main.270a6063.css.map",
+    "main.52f05aff.css.map": "/teploceramic-front/static/css/main.52f05aff.css.map",
     "main.84d96c20.js.map": "/teploceramic-front/static/js/main.84d96c20.js.map"
   },
   "entrypoints": [
-    "static/css/main.270a6063.css",
+    "static/css/main.52f05aff.css",
     "static/js/main.84d96c20.js"
   ]
 }
