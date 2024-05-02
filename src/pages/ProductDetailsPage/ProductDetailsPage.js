@@ -22,6 +22,8 @@ export const ProductDetailsPage = () => {
   const [detailType, setDetailType] = useState('About the product');
   const [currentShiftToggler, setCurrentShiftToggler] = useState(0);
   const [currentShiftList, setCurrentShiftList] = useState(0);
+  const [isClippedDescription, setIsClippedDescription] = useState(true);
+  const [isClippedSpecification, setIsClippedSpecification] = useState(true);
 
   const getShift = (detailValue) => {
     const toddlerWidth = 40;
@@ -50,8 +52,6 @@ export const ProductDetailsPage = () => {
     }
   };
 
-  console.log(currentShiftList);
-
   return (
     <div className="product__details-page">
       <div className="container">
@@ -63,8 +63,6 @@ export const ProductDetailsPage = () => {
           />
           <p className="current__page text-color--neutralN300">{currentPage}</p>
         </div>
-      </div>
-      <div className="container">
         <ul
           className="product-info__nav-list"
           style={{ right: `${currentShiftList}px` }}
@@ -98,10 +96,34 @@ export const ProductDetailsPage = () => {
         </div>
       </div>
       <ProductDetailsCard detailType={detailType} />
-      {(detailType === 'Description' || detailType === 'About the product') && <DescriptionInfoBlock />}
-      {(detailType === 'Specifications' || detailType === 'About the product') && <SpecificationsInfoBlock />}
-      {detailType === 'Availability' && <AvailabilityBlock />}
-      {detailType === 'Shipping and payment' && <ShipingAndPaymentBlock />}
+      <section className="product__details-section">
+        { detailType === 'About the product' && <DescriptionInfoBlock detailType={detailType} isClippedDescription={isClippedDescription} />}
+        { detailType === 'Description' && <DescriptionInfoBlock detailType={detailType} isClippedDescription={isClippedDescription} />}
+        { detailType === 'About the product' && (
+          <button
+            className="more-info__button main__text--medium text-color--neutralN400"
+            onClick={() => setIsClippedDescription(!isClippedDescription)}
+          >
+            More info
+          </button>
+          )
+        }
+      </section>
+      <section className="product__details-section">
+        { detailType === 'About the product' && <SpecificationsInfoBlock detailType={detailType} isClippedSpecification={isClippedSpecification} />}
+        { detailType === 'Specifications' && <SpecificationsInfoBlock detailType={detailType} isClippedSpecification={isClippedSpecification} />}
+        { detailType === 'About the product' && (
+          <button
+            className="more-info__button main__text--medium text-color--neutralN400"
+            onClick={() => setIsClippedSpecification(!isClippedSpecification)}
+          >
+            More info
+          </button>
+          )
+        }
+      </section>
+      { detailType === 'Availability' && <AvailabilityBlock /> }
+      { detailType === 'Shipping and payment' && <ShipingAndPaymentBlock /> }
       <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
       <ProductsSlider title="RECOMENDED PRODUCTS" />
       <QuestionsBlock />

@@ -1,11 +1,23 @@
-.specifications__info-block {
-  margin-bottom: 64px;
-}
-
 .specifications__block {
   &-title {
     margin-bottom: 16px;
     text-transform: uppercase;
+  }
+}
+
+.specifications-clipped {
+  position: relative;
+  height: 142px;
+  overflow-y: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(#ffffff82, #ffffffd9, #ffffff);
   }
 }
 

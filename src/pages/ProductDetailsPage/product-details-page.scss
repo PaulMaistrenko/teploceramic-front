@@ -4,6 +4,14 @@
   overflow-x: hidden;
 }
 
+.product__details-section {
+  margin-bottom: 24px;
+
+  &:nth-child(4) {
+    margin-bottom: 64px;
+  }
+}
+
 .back__button {
   width: 24px;
   height: 24px;
@@ -50,9 +58,22 @@
 .product-info__toddler {
   position: absolute;
   top: -3px;
-  //left: calc(100% - 40px);
   width: 40px;
   height: 6px;
   border-radius: 100px;
   background-color: $primaryP300;
+}
+
+.more-info__button {
+  padding: 16px 0 0 24px;
+  display: flex;
+  gap: 8px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/icons/arrow-right_icon.svg');
+  }
 }

@@ -1,10 +1,18 @@
+import classNames from 'classnames';
 import './specifications-info-block.scss';
 
-export const SpecificationsInfoBlock = () => {
+export const SpecificationsInfoBlock = ({ detailType, isClippedSpecification }) => {
+
   return (
     <div className="specifications__info-block">
       <div className="container">
         <p className="specifications__block-title large__text--medium text-color--neutralN500">specifications</p>
+        <div className={
+            classNames(
+              "options__list-screen", { "specifications-clipped": (isClippedSpecification && detailType === 'About the product') },
+            )
+          }
+        >
         <ul className="options__list">
           <li className="options-list__item">
             <p className="option main__text--regular text-color--neutralN350">Volume</p>
@@ -71,6 +79,7 @@ export const SpecificationsInfoBlock = () => {
             <p className="option__value option__value main__text--medium text-color--neutralN400">Ukraine</p>
           </li>
         </ul>
+        </div>
       </div>
     </div>
   );
