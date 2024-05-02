@@ -30,7 +30,7 @@ export const ShipingAndPaymentBlock = () => {
             </div>
           </div>
         </div>
-        <button class="trade-conditions__button button main__button-primary main__button-primary_medium">Calculate</button>
+        <button className="trade-conditions__button button main__button-primary main__button-primary_medium">Calculate</button>
         <div className="trade-condition__result">
           <p className="result__text">Approximate cost of delivery</p>
           <div className="result__field">35 €</div>

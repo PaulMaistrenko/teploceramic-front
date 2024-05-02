@@ -31,8 +31,6 @@ export const HomePage = () => {
     scrollToTop();
   }, []);
 
-  console.log('HomePage');
-
   return (
     <div className="home__page">
     <section className="slogan">

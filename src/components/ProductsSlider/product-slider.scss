@@ -39,6 +39,7 @@
     width: max-content;
     display: flex;
     gap: 16px;
+    transition: transform 0.8s;
   }
 
   &__item {

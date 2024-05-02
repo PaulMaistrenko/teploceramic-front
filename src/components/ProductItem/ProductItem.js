@@ -15,7 +15,7 @@ export const ProductItem = () => {
   const itemId = 1;
 
   return (
-    <div className="priduct__item">
+    <div className="product__item">
       <Link
         to={`/${currentPage.toLowerCase()}/${itemId}`}
         className="product-details__link"
