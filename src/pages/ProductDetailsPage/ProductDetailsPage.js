@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './product-details-page.scss';
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { MainContext } from '../../context/MainContext';
 import { detailTypes } from '../../variables';
 import classNames from 'classnames';
