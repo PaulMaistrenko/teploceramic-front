@@ -1,3 +1,5 @@
+@import '../../styles/utils/_vars';
+
 .details-card {
   &__images {
     display: flex;
@@ -26,14 +28,19 @@
   }
 
   &__button {
+    height: 48px;
     width: 100%;
     margin-bottom: 24px;
+    color: $neutralN0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
 
     &::after {
       content: "";
       margin-left: 8px;
       display: block;
-      background-image: url('../../assets/icons/cart_icon.svg');
+      background-image: url("../../assets/images/icons/shopping-cart-white.svg");
       width: 24px;
       height: 24px;
     }
@@ -42,11 +49,42 @@
 
 .product {
   &__code {
-    margin-bottom: 8px;
     text-align: start;
   }
 
   &__title {
     margin-bottom: 24px;
+    color: $neutralN500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
   }
+}
+
+.item__old-conditions {
+  display: flex;
+  gap: 8px;
+}
+
+.item__old-price {
+  color: $neutralN350;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  text-decoration: line-through;
+}
+
+.item__discount {
+  color: $dangerDN500;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.item__price {
+  margin-bottom: 16px;
+  color: $neutralN500;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 120%;
 }

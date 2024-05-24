@@ -14,6 +14,8 @@ import { AboutPage } from './pages/AboutPage'
 import { HomePage } from './pages/HomePage';
 import { MainProvider } from './context/MainContext';
 import { ProductDetailsPage } from './pages/ProductDetailsPage';
+import { HelpPage } from './pages/HelpPage';
+import { PlaceAnOrderPage } from './pages/PlaceAnOrderPage/PlaceAnOrderPage';
 
 export const Root = () => (
   <Router>
@@ -42,10 +44,11 @@ export const Root = () => (
             <Route path=":productId" element={<ProductDetailsPage />} />
           </Route>
           <Route path="cart" element={<CartPage />} />
+          <Route path="place an order" element={<PlaceAnOrderPage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="help" element={<HelpPage />} />
         </Route>
       </Routes>
     </MainProvider>
-    
   </Router>
 );

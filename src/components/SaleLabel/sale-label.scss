@@ -1,0 +1,18 @@
+@import '../../styles/utils/_vars';
+
+.sale-label {
+  position: absolute;
+  left: 178px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 34px;
+  background-color: $primaryP500;
+  color: $neutralN50;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 2px;
+}

@@ -1,36 +1,35 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
-import { MainContext } from "../../context/MainContext";
-import { scrollToTop } from "../../helpers/scrollToTop";
-import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
-import { CategoryInfo } from "../../components/CategoryInfo";
-import { ProductsFilter } from "../../components/ProductsFilter";
-import { ProductList } from "../../components/ProductList";
+import { AllProductsPageHeader } from "../../components/AllProductsPageHeader";
 import { Pagination } from "../../components/Pagination";
-import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
+import { ProductsFilter } from "../../components/ProductsFilter";
+import { ProductsList } from "../../components/ProductsList";
+import { ProductsSlider } from "../../components/ProductsSlider";
+import { QuestionsBlock } from "../../components/QuestionsBlock/QuestionsBlock";
+import './accessories.scss';
+import { MainContext } from "../../context/MainContext";
+import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
 
 export const AccessoriesPage = () => {
   const {
-    isFiltersPageOpen,
-    currentPage,
     setCurrentPage,
+    isFiltersPageOpen,
   } = useContext(MainContext);
 
   useEffect (() => {
     setCurrentPage('Accessories');
-    scrollToTop();
-  }, []);
+  });
 
   return (
-    <div className="products__page">
+    <div className="accessories__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <CategoryInfo
-        currentPage={currentPage}
-      />
-      <ProductsFilter />
-      <ProductList />
-      <Pagination />
-      <ProductsSlider title="RECOMENDED PRODUCTS" />
+      <AllProductsPageHeader title="accessories" />
+      <div className="container">
+        <ProductsFilter />
+        <ProductsList />
+        <Pagination />
+        <ProductsSlider />
+      </div>
+      <QuestionsBlock title="accessories" />
     </div>
   );
 }

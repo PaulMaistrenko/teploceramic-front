@@ -1,20 +1,55 @@
-@import '../../styles/utils/vars.scss';
+@import '../../styles/utils/_vars';
 
-.products__slider {
-  margin-bottom: 56px;
+.products-slider__screen {
+  overflow: hidden;
+  width: 288px;
+  height: 479px;
+}
 
-  &:nth-child(6) {
-    margin-bottom: 104px;
+.slide__list {
+  display: flex;
+}
+
+.slide__item {
+  width: 288px;
+}
+
+.product-slider__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.product-slider__title {
+  text-transform: uppercase;
+  color: $neutralN500;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.product-slider__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: underline;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/icons/arrow-right-n400.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .slider {
-  &__top {
-    margin-bottom: 24px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
   &__nav-buttons {
     display: flex;
     gap: 8px;
@@ -25,32 +60,11 @@
     height: 24px;
   
     &.prev {
-      background-image: url('../../assets/icons/arrow-left_icon--neutralN300.svg');
+      background-image: url("../../assets/images/icons/arrow-left-n300.svg");
     }
 
     &.next {
-      background-image: url('../../assets/icons/arrow-right_icon--neutralN300.svg');
-    }
-  }
-
-  &__screen {
-    margin: 0 auto;
-    width: 288px;
-    overflow: hidden;
-  }
-
-  &__list {
-    width: max-content;
-    display: flex;
-    gap: 16px;
-    transition: transform 0.8s;
-  }
-
-  &__item {
-    width: 288px;
-
-    &.item__code {
-      text-align: end;
+      background-image: url("../../assets/images/icons/arrow-right-n300.svg");
     }
   }
 }

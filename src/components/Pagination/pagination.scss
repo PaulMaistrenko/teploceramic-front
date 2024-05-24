@@ -1,7 +1,9 @@
 @import '../../styles/utils/vars.scss';
 
 .pagination {
-  margin: 32px 0 64px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+
   &__content {
     height: 40px;
     display: flex;
@@ -31,11 +33,11 @@
     height: 24px;
 
     &.prev { 
-      background-image: url('../../assets/icons/arrow-left_icon--neutralN300.svg');
+      background-image: url("../../assets/images/icons/arrow-left-n300.svg");
     }
 
     &.next {
-      background-image: url('../../assets/icons/arrow-right_icon--neutralN300.svg');
+      background-image: url("../../assets/images/icons/arrow-right-n300.svg");
     }
 
   }

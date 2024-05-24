@@ -1,281 +1,111 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import './home-page.scss';
+import { SpecOfferCard } from '../../components/SpecOfferCard';
+import { ProductsSlider} from '../../components/ProductsSlider';
+import { useContext, useEffect } from 'react';
+import { MainContext } from '../../context/MainContext';
+import { productCategories } from '../../variables/variables';
+import { scrollToTop } from '../../services/scrollToTop';
 
-import dehydrators from '../../assets/blocks/categories/Dehydrators.svg';
-import heaters from '../../assets/blocks/categories/Heaters.svg';
-import suspendedHeaters from '../../assets/blocks/categories/Suspended heaters.svg';
-import towelWarmers from '../../assets/blocks/categories/Towel warmers.svg';
-import accessories from '../../assets/blocks/categories/Accessories.svg';
-
-/* temporery imports */
-
-import specialOfferImg from '../../temporery-files/special-offers_img.png';
-
-
-import heater from '../../temporery-files/heaters_exemple.png';
-import suspendedHeater from '../../temporery-files/suspendet-heaters_exemple.png';
-import towelWarmer from '../../temporery-files/towel-warmers_exemple.png';
-import accessory from '../../temporery-files/accessories_exemple.png';
-import { scrollToTop } from "../../helpers/scrollToTop";
-import { ProductItem } from "../../components/ProductItem";
-import { useContext, useEffect } from "react";
-import { MainContext } from "../../context/MainContext";
 
 export const HomePage = () => {
-
   const {
     setCurrentPage,
   } = useContext(MainContext);
-  
-  useEffect(() => {
+
+  useEffect (() => {
     setCurrentPage('Home');
-    scrollToTop();
-  }, []);
+  });
 
   return (
     <div className="home__page">
-    <section className="slogan">
-      <div className="slogan__content container">
-        <p className="slogan__title">Heat that gives <span>COMFORT</span> for life</p>
-        <p className=" slogan__text secondary__text--regular text-color--neutralN200">Teploceramic is a Ukrainian company that specializes in the production of high-quality thermal equipment.</p>
-        <Link className="button main__button-primary main__button-primary_extra-small" to="/">Shop Now</Link>
-      </div>
-    </section>
-    <section className="shop-by-category">
+      <section className="slogan__section">
         <div className="container">
-          <h6 className="section__title">SHOP BY CATEGORY</h6>
-          <ul className="category__cards">
-            <li className="category__card">
+          <h1 className="slogan__title">Heat that gives <span>COMFORT</span> for life</h1>
+          <div className="slogan__text">
+            Teploceramic is a Ukrainian company that
+            specializes in the production of high-quality
+            thermal equipment.
+          </div>
+          <button className="slogan__button button primary-button">Shop Now</button>
+        </div>
+      </section>
+      <section className="categories__section">
+        <div className="container">
+          <h2 className="categories__title">SHOP BY CATEGORY</h2>
+          <ul className="categories__list">
+            <li className="categories__item">
               <Link
-                className="category__link"
                 to="/dehydrators"
+                className="category__link"
                 onClick={scrollToTop}
               >
-                <img src={dehydrators} alt="Dehydrators" className="category__img" />
-                <p className="category__title main__text--medium">Dehydrators</p>
+                <div className="category__img dehydrators" />
+                <p className="category__title">Dehydrators</p>
               </Link>
             </li>
-            <li className="category__card">
+            <li className="categories__item">
               <Link
-                className="category__link"
                 to="/heaters"
+                className="category__link"
                 onClick={scrollToTop}
               >
-                <img src={heaters} alt="Heaters" className="category__img" />
-                <p className="category__title main__text--medium">Heaters</p>
+                <div className="category__img heaters" />
+                <p className="category__title">Heaters</p>
               </Link>
             </li>
-            <li className="category__card">
+            <li className="categories__item">
               <Link
-                className="category__link"
                 to="/suspended heaters"
+                className="category__link"
                 onClick={scrollToTop}
               >
-                <img src={suspendedHeaters} alt="Suspended heaters" className="category__img" />
-                <p className="category__title main__text--medium">Suspended heaters</p>
+                <div className="category__img suspended-heaters" />
+                <p className="category__title">Suspended heaters</p>
               </Link>
             </li>
-            <li className="category__card">
+            <li className="categories__item">
               <Link
-                className="category__link"
                 to="/towel warmers"
-                onClick={scrollToTop}
-              >
-                <img src={towelWarmers} alt="Towel warmers" className="category__img" />
-                <p className="category__title main__text--medium">Towel warmers</p>
-              </Link>
-            </li>
-            <li className="category__card">
-              <Link
                 className="category__link"
-                to="/accessories"
                 onClick={scrollToTop}
               >
-                <img src={accessories} alt="Accessories" className="category__img" />
-                <p className="category__title main__text--medium">Accessories</p>
+                <div className="category__img towel-warmers" />
+                <p className="category__title">Towel warmers</p>
+              </Link>
+            </li>
+            <li className="categories__item">
+              <Link
+                to="/accessories"
+                className="category__link"
+                onClick={scrollToTop}
+              >
+                <div className="category__img accessories" />
+                <p className="category__title">Accessories</p>
               </Link>
             </li>
           </ul>
         </div>
       </section>
-      <section className="special-offers">
+      <section className="special-offers__section">
         <div className="container">
-          <h6 className="section__title">SPECIAL OFFERS</h6>
-          <ul className="spec-cards">
-            <li className="spec-card">
-              <img src={specialOfferImg} alt="" className="spec-card__img" />
-              <div className="spec-card__content">
-                <p className="item__code secondary__text--regular text-color--neutralN300">Code: 2588451</p>
-                <p className="item__name extra-large__text--medium">TEPLOCERAMIC TC500BC+</p>
-                <p className="item__color secondary__text--regular text-color--neutralN100">Black</p>
-                <div className="item__old-conditions">
-                  <p className="item__old-price secondary__text--regular text-color--neutralN300">450 €</p>
-                  <p className="item__discount secondary__text--regular text-color--dangerDN500">-35%</p>
-                </div>
-                <p className="item__price">349 €</p>
-              </div>
-              <button className="button main__button-primary main__button-primary_extra-small">Buy Now</button>
-            </li>
-            <div className="nav__buttons">
-              <button className="prev icon"></button>
-              <button className="next icon"></button>
-            </div>
-          </ul>
+          <h2 className="special-offers__title">SPECIAL OFFERS</h2>
+          <SpecOfferCard />
+          <div className="special-nav__buttons">
+            <button className="special__button-prev special__button button bgd-icon" />
+            <button className="special__button-next special__button button bgd-icon" />
+          </div>
         </div>
       </section>
-      <section className="product-category">
+      <section className="all-products__section">
         <div className="container">
-          <div className="product-category__top">
-            <h6 className="category__title">DEHYDRATORS</h6>
-            <Link
-              className="to-all-products__link main__text--medium"
-              to="/dehydrators"
-              onClick={scrollToTop}
-            >
-              show all
-            </Link>
-          </div>
-          <ProductItem />
-        </div>
-      </section>
-      <section className="product-category">
-        <div className="container">
-          <div className="product-category__top">
-            <h6 className="category__title">HEATERS</h6>
-            <Link
-              className="to-all-products__link main__text--medium"
-              to="/heaters"
-              onClick={scrollToTop}
-            >
-              show all
-            </Link>
-          </div>
-          <ul className="product__list">
-            <li className="item__card">
-              <p className="item__code secondary__text--regular text-color--neutralN300">Code: TC400M-white</p>
-              <img src={heater} alt="" className="item__img" />
-              <div className="sale__label icon"></div>
-              <div className="item__info">
-                <p className="item__type main__text--medium text-color--neutralN350">Heater</p>
-                <p className="item__name extra-large__text--medium text-color--neutralN400">Teploceramic TC400M</p>
-                <p className="item__color secondary__text--regular text-color--neutralN350">White</p>
-              </div>
-              <div className="product-category__bottom">
-                <div className="product-price__wrapper">
-                  <div className="item__old-conditions">
-                    <p className="item__old-price secondary__text--regular text-color--neutralN300">65 €</p>
-                    <p className="item__discount secondary__text--regular text-color--dangerDN500">-5%</p>
-                  </div>
-                  <p className="item__price">57 €</p>
-                </div>
-                <button className="add-to-cart__button icon"></button>
-              </div>
+        <ul className="product-types__list">
+          {Object.keys(productCategories).map(category => (
+            <li className="product-type__item" key={category}>
+              <ProductsSlider title={category} />
             </li>
-          </ul>
-        </div>
-      </section><section className="product-category">
-        <div className="container">
-          <div className="product-category__top">
-            <h6 className="category__title">SUSPENDED HEATERS</h6>
-            <Link
-              className="to-all-products__link main__text--medium"
-              to="/suspended heaters"
-              onClick={scrollToTop}
-            >
-              show all
-            </Link>
-          </div>
-          <ul className="product__list">
-            <div className="item__card">
-              <p className="item__code secondary__text--regular text-color--neutralN300">Code: TP1-07</p>
-              <img src={suspendedHeater} alt="" className="item__img" />
-              <div className="sale__label icon"></div>
-              <div className="item__info">
-                <p className="item__type main__text--medium text-color--neutralN350">Suspended heater</p>
-                <p className="item__name extra-large__text--medium text-color--neutralN400">Teploceramic TP1-07</p>
-                <p className="item__color secondary__text--regular text-color--neutralN350">White</p>
-              </div>
-              <div className="product-category__bottom">
-                <div className="product-price__wrapper">
-                  <div className="item__old-conditions">
-                    <p className="item__old-price secondary__text--regular text-color--neutralN300">450 €</p>
-                    <p className="item__discount secondary__text--regular text-color--dangerDN500">-35%</p>
-                  </div>
-                  <p className="item__price">210 €</p>
-                </div>
-                <button className="add-to-cart__button icon"></button>
-              </div>
-            </div>
-          </ul>
-        </div>
-      </section><section className="product-category">
-        <div className="container">
-          <div className="product-category__top">
-            <h6 className="category__title">TOWEL WARMERS</h6>
-            <Link
-              className="to-all-products__link main__text--medium"
-              to="/towel warmers"
-              onClick={scrollToTop}
-            >
-              show all
-            </Link>
-          </div>
-          <ul className="product__list">
-            <li className="item__card">
-              <p className="item__code secondary__text--regular text-color--neutralN300">Code: TC1000BC-white-marble</p>
-              <img src={towelWarmer} alt="" className="item__img" />
-              <div className="sale__label icon"></div>
-              <div className="item__info">
-                <p className="item__type main__text--medium text-color--neutralN350">Towel warmer</p>
-                <p className="item__name extra-large__text--medium text-color--neutralN400">Teploceramic TC1000BC</p>
-                <p className="item__color secondary__text--regular text-color--neutralN350">White marble</p>
-              </div>
-              <div className="product-category__bottom">
-                <div className="product-price__wrapper">
-                  <div className="item__old-conditions">
-                    <p className="item__old-price secondary__text--regular text-color--neutralN300">450 €</p>
-                    <p className="item__discount secondary__text--regular text-color--dangerDN500">-35%</p>
-                  </div>
-                  <p className="item__price">210 €</p>
-                </div>
-                <button className="add-to-cart__button icon"></button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section><section className="product-category">
-        <div className="container">
-          <div className="product-category__top">
-            <h6 className="category__title">ACCESSORIES</h6>
-            <Link
-              className="to-all-products__link main__text--medium"
-              to="/accessories"
-              onClick={scrollToTop}
-            >
-              show all
-            </Link>
-          </div>
-          <ul className="product__list">
-            <li className="item__card">
-              <p className="item__code secondary__text--regular text-color--neutralN300">Code: 28902857</p>
-              <img src={accessory} alt="" className="item__img" />
-              <div className="sale__label icon"></div>
-              <div className="item__info">
-                <p className="item__type main__text--medium text-color--neutralN350">Accessories</p>
-                <p className="item__name extra-large__text--medium text-color--neutralN400">Teploceramic AC70</p>
-                <p className="item__color secondary__text--regular text-color--neutralN350">Silver</p>
-              </div>
-              <div className="product-category__bottom">
-                <div className="product-price__wrapper">
-                  <div className="item__old-conditions">
-                    <p className="item__old-price secondary__text--regular text-color--neutralN300">450 €</p>
-                    <p className="item__discount secondary__text--regular text-color--dangerDN500">-35%</p>
-                  </div>
-                  <p className="item__price">210 €</p>
-                </div>
-                <button className="add-to-cart__button icon"></button>
-              </div>
-            </li>
-          </ul>
+          ))}
+        </ul>
         </div>
       </section>
     </div>

@@ -1,0 +1,148 @@
+@import '../../styles/utils/_vars';
+
+.cart-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $neutralN200;
+}
+
+.cart-item__info {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.cart-item__description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item__img {
+  width: 85px;
+  height: 85px;
+}
+
+.cart-item__code {
+  color: $neutralN300;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cart-item__name {
+  color: $neutralN500;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.cart-item__count {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cart-item__counter {
+  display: flex;
+  gap: 13px;
+}
+
+.counter__value {
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &--neutralN350 {
+    color: $neutralN350;
+  }
+}
+
+.cart-item__button {
+  width: 24px;
+  height: 24px;
+}
+
+.decrease__button {
+  background-image: url("../../assets/images/icons/minus-button.svg");
+}
+
+.rise__button {
+  background-image: url("../../assets/images/icons/plus-button.svg");
+}
+
+.cart-item__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.cart-item__discount-block {
+  display: flex;
+  gap: 8px;
+}
+
+.cart-item__old-price {
+  color: $neutralN350;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+  text-decoration: line-through;
+}
+
+.cart-item__discount {
+  color: $dangerDN500;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.cart-item__price {
+  color: $neutralN500;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.cart-item__actions {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.accessories-link {
+  display: flex;
+  gap: 8px;
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/icons/plus-button-n400.svg");
+  }
+}
+
+.remove-cart-item__button {
+  display: flex;
+  gap: 8px;
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/icons/delete-icon.png");
+  }
+}

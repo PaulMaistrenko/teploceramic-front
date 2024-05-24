@@ -1,0 +1,224 @@
+@import '../../styles/utils/_vars';
+
+.about__page {
+  & section {
+    border-bottom: 2px solid $neutralN0;
+  }
+}
+
+.about__top {
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../../assets/images/blocks/slogan/bathroom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__title {
+  text-align: center;
+  padding-top: 202px;
+  padding-bottom: 203px;
+  color: $neutralN0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+
+  & span {
+    color: $primaryP500;
+  }
+}
+
+.about__slogan {
+  background-color: $neutralN500;
+}
+
+.about-slogan__text {
+  text-align: center;
+  padding-block: 80px;
+  color: $neutralN50;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.facts-about-us {
+  padding-block: 48px;
+  background-color: $neutralN500;
+}
+
+.facts-about-us__title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: $primaryP500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.facts-about-us__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.facts-about-us__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.fact__img {
+  border-radius: 50%;
+}
+
+.fact__content {
+  text-align: center;
+  color: $neutralN50;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about-our-advantages {
+  background-color: $neutralN500;
+}
+
+.about-our-advantages__title {
+  padding-inline: 16px;
+  padding-block: 48px;
+  text-align: center;
+  color: $primaryP500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  border-bottom: 2px solid $neutralN0;
+}
+
+.advantage__title {
+  margin-bottom: 8px;
+  color: $neutralN0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.advantage__text {
+  color: $neutralN200;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.advantages__item {
+  padding-block: 40px;
+}
+
+.advantages__item:not(:last-child) {
+  border-bottom: 2px solid $neutralN0;
+}
+
+.contacts {
+  padding-block: 48px;
+  background-color: $neutralN500;
+}
+
+.contacts__title {
+  margin-bottom: 8px;
+  text-align: center;
+  color: $primaryP500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.contacts__text {
+  margin-bottom: 40px;
+  text-align: center;
+  color: $neutralN200;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.contacts__modes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-mode__title {
+  margin-bottom: 8px;
+  text-align: center;
+  color: $neutralN100;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.contact-mode__source {
+  margin-bottom: 16px;
+  text-align: center;
+  color: $primaryP500;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.contact__button {
+  width: 100%;
+  height: 44px;
+}
+
+.certificates {
+  padding-block: 48px;
+  background-color: $neutralN500;
+  border-bottom: none !important;
+}
+
+.certificates__title {
+  margin-bottom: 8px;
+  text-align: center;
+  color: $primaryP500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.certificates__text {
+  margin-bottom: 32px;
+  text-align: center;
+  color: $neutralN200;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.certificates-slider__screen {
+  margin-bottom: 16px;
+  overflow: hidden;
+  width: 288px;
+  height: 397px;
+}
+
+.certificates__list {
+  display: flex;
+  gap: 12px;
+}
+
+.cerificates-slider__nav-buttons {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.cerificates-slider__prev-button {
+  width: 44px;
+  height: 44px;
+  background-image: url("../../assets/images/icons/arrow-left-n400.svg");
+}
+
+.cerificates-slider__next-button {
+  width: 44px;
+  height: 44px;
+  background-image: url("../../assets/images/icons/arrow-right-n400.svg");
+}

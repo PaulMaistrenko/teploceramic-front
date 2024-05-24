@@ -1,0 +1,56 @@
+@import '../../../styles/utils/_vars';
+
+.availability-block__title {
+  margin-bottom: 16px;
+  color: $neutralN500;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.storage-areas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.storage-areas__buttons {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.storage-area__button {
+  height: 40px;
+  width: 140px;
+}
+
+.storage__area {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.adress {
+  width: 65%;
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.location {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.qnty {
+  display: flex;
+  gap: 4px;
+  color: $successSC900;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}

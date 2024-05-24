@@ -2,7 +2,7 @@
 
 .filters {
   &__page {
-    padding-bottom: 16px;
+    padding-block: 16px;
     position: absolute;
     background-color: $neutralN0;
     z-index: 100;
@@ -12,31 +12,37 @@
     background-color: $neutralN0;
   }
 
-  &__header {
+  &-close__button {
+    margin-bottom: 24px;
     display: flex;
     width: 100%;
-    padding: 16px 0 24px;
     gap: 8px;
     align-items: center;
+    color: $black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
 
     &::before {
       content: "";
       display: block;
       width: 24px;
       height: 24px;
-      background-image: url('../../assets/icons/arrow-left_icon.svg');
+      background-image: url("../../assets/images/icons/arrow-left-n400.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
-  }
-
-  &__types-list {
-    display: flex;
-    flex-direction: column;
-    padding-block: 16px;
-    gap: 32px;
   }
 }
 
 .filter {
+  &-types__list {
+    padding-block: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
   &-type {
     &__title {
       padding-bottom: 8px;
@@ -45,18 +51,23 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid $primaryP500;
+      color: $neutralN400;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 140%;
 
       &::after {
         content: "";
         display: block;
         width: 24px;
         height: 24px;
-        background-image: url('../../assets/icons/arrow-up_icon.svg');
+        background-image: url("../../assets/images/icons/arrow-up-n400.svg");
       }
     }
   }
 
   &__values {
+    padding-inline: 8px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -69,6 +80,10 @@
   &__button {
     display: flex;
     gap: 8px;
+    color: $neutralN350;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
 
     &::before {
       content: "";
@@ -100,6 +115,7 @@
     height: 40px;
     border: 1px solid $neutralN200;
     border-radius: 4px;
+    color: $neutralN200;
   }
 
   &__submit-button {
@@ -129,5 +145,10 @@
 .submit-form__wrapper {
   margin-bottom: 12px;
   padding: 8px 0 24px;
+}
+
+.clear-all-filters__button {
+  width: 100%;
+  height: 44px;
 }
 

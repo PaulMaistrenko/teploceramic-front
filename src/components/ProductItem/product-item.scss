@@ -1,9 +1,14 @@
 @import '../../styles/utils/vars.scss';
+@import '../../styles/utils/mixins.scss';
 
 .item {
   &__card {
     position: relative;
     padding-inline: 16px;
+
+    @include onTablet {
+      width: 256px;
+    }
   }
 
   &__img {

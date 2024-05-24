@@ -1,0 +1,8 @@
+@import '../../styles/utils/_vars';
+
+.page {
+  &__body {
+    scroll-behavior: smooth;
+    font-family: "K2D", sans-serif;
+  }
+}

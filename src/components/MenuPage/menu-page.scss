@@ -1,0 +1,87 @@
+@import '../../styles/utils/_vars';
+@import '../../styles/utils/_mixins';
+
+.menu__page {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $neutralN0;
+  opacity: 0;
+  transition: 0.3s;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+
+  &--dark {
+    &::after {
+      position: absolute;
+      top: 0;
+      opacity: 0.9;
+      content: "";
+      display: block;
+      height: 100vh;
+      width: 100vh;
+      background-color: $neutralN600;
+    }
+  }
+
+  @include onTablet {
+    width: 372px;
+  }
+}
+
+.menu__list {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border-bottom: 1px solid $neutralN100;
+}
+
+.menu__link {
+  color: $neutralN400;
+}
+
+.common__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__link {
+  color: $neutralN300;
+}
+
+.help__link {
+  color: $neutralN300;
+}
+
+.language-selector {
+  display: flex;
+  gap: 4px;
+  color: $neutralN300;
+}
+
+.language-selector__button {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/images/icons/arrow-down-n300.svg");
+}

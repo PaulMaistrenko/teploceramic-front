@@ -1,0 +1,165 @@
+@import '../../styles/utils/_vars';
+
+/* slogan section */
+
+.slogan__section {
+  padding-block: 127px;
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../../assets/images/blocks/slogan/bathroom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slogan__title {
+  margin-bottom: 16px;
+  color: $neutralN0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+
+  span {
+    color: $primaryP500;
+  }
+}
+
+.slogan__text {
+  margin-bottom: 64px;
+  color: $neutralN200;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.slogan__button {
+  height: 40px;
+  width: 100%;
+  color: $neutralN0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* end of slogan section */
+
+/* categories section */
+
+.categories__section {
+  padding-block: 32px;
+}
+
+.categories__title {
+  margin-bottom: 24px;
+  color: $neutralN500;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.categories__list {
+  padding-inline: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.categories__item {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  width: 256px;
+  height: 162px;
+  border: 1px solid $neutralN200;
+  border-radius: 4px;
+  background-color: $neutralN50;
+}
+
+.category__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.category__img {
+  width: 100px;
+  height: 100px;
+}
+
+.category__title {
+  color: $neutralN400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.dehydrators {
+  background-image: url("../../assets/images/blocks/categories/Dehydrators.svg");
+}
+
+.heaters {
+  background-image: url("../../assets/images/blocks/categories/Heaters.svg");
+}
+
+.suspended-heaters {
+  background-image: url("../../assets/images/blocks/categories/Suspended heaters.svg");
+}
+
+.towel-warmers {
+  background-image: url("../../assets/images/blocks/categories/Towel warmers.svg");
+}
+
+.accessories {
+  background-image: url("../../assets/images/blocks/categories/Accessories.svg");
+}
+
+/* end of categories section */
+
+/* special offers section */
+
+.special-offers__section {
+  position: relative;
+  padding-block: 24px;
+  color: $neutralN0;
+  background-color: $neutralN500;
+}
+
+.special-offers__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.special-nav__buttons {
+  position: absolute;
+  top: 380px;
+  display: flex;
+  gap: 8px;
+}
+
+.special__button {
+  width: 140px;
+  height: 40px;
+  border: 1px solid $neutralN400;
+
+  &-prev {
+    background-image: url("../../assets/images/icons/arrow-left-n400.svg");
+  }
+
+  &-next {
+    background-image: url("../../assets/images/icons/arrow-right-n400.svg");
+  }
+}
+
+/* end of special offers section */
+
+/* all products section */
+
+.product-types__list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 32px;
+  padding-bottom: 104px;
+}

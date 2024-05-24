@@ -1,35 +1,35 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useContext, useEffect } from "react";
-import { ProductList } from "../../components/ProductList";
-import { ProductsFilter } from "../../components/ProductsFilter";
-import { CategoryInfo } from "../../components/CategoryInfo";
-import { MainContext } from "../../context/MainContext";
-import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
-import { Pagination } from "../../components/Pagination";
-import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
-import { scrollToTop } from "../../helpers/scrollToTop";
-import { QuestionsBlock } from "../../components/QuestionsBlock";
+import { useContext, useEffect } from 'react';
+import { AllProductsPageHeader } from '../../components/AllProductsPageHeader';
+import { Pagination } from '../../components/Pagination';
+import { ProductsFilter } from '../../components/ProductsFilter';
+import { ProductsList } from '../../components/ProductsList';
+import { ProductsSlider } from '../../components/ProductsSlider';
+import './dehydrators-page.scss';
+import { MainContext } from '../../context/MainContext';
+import { QuestionsBlock } from '../../components/QuestionsBlock/QuestionsBlock';
+import { FiltersPage } from '../../components/FiltersPage/FiltersPage';
 
 export const DehydratorsPage = () => {
   const {
-    isFiltersPageOpen,
     setCurrentPage,
+    isFiltersPageOpen,
   } = useContext(MainContext);
 
   useEffect (() => {
     setCurrentPage('Dehydrators');
-    scrollToTop();
-  }, []);
+  });
 
   return (
-    <div className="products__page">
+    <div className="dehydrators__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <CategoryInfo />
-      <ProductsFilter />
-      <ProductList />
-      <Pagination />
-      <ProductsSlider title="RECOMENDED PRODUCTS" />
-      <QuestionsBlock />
+      <AllProductsPageHeader title="dehydrators" />
+      <div className="container">
+        <ProductsFilter />
+        <ProductsList />
+        <Pagination />
+        <ProductsSlider />
+      </div>
+      <QuestionsBlock title="dehydrators" />
     </div>
   );
 }

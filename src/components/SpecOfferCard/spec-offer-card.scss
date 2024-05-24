@@ -1,0 +1,83 @@
+@import '../../styles/utils/_vars';
+
+.special-offer__card {
+  width: 288px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-item__img {
+  margin-bottom: 80px;
+  height: 288px;
+}
+
+.special-item__info {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.special-item__code {
+  color: $neutralN300;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.special-item__name {
+  color: $neutralN50;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.special-item__color {
+  color: $neutralN100;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.special-item__prices {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-item__old-conditions {
+  display: flex;
+  gap: 8px;
+}
+
+.special-item__old-price {
+  color: $neutralN300;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+  text-decoration: line-through;
+}
+
+.special-item__discount {
+  color: $dangerDN500;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.special-item__price {
+  color: $neutralN50;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.special-item__button {
+  height: 40px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}

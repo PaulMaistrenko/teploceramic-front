@@ -6,7 +6,6 @@
     width: 100%;
     height: 44px;
     padding-inline: 12px;
-    margin-bottom: 24px;
     display: flex;
     gap: 8px;
     justify-content: space-between;
@@ -24,6 +23,6 @@
   &__icon {
     width: 24px;
     height: 24px;
-    background-image: url('../../assets/icons/search.svg');
+    background-image: url("../../assets/images/icons/search-icon.svg");
   }
 }

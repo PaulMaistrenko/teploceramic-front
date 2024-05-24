@@ -1,35 +1,35 @@
 import { useContext, useEffect } from "react";
-import { CategoryInfo } from "../../components/CategoryInfo";
-import { MainContext } from "../../context/MainContext";
-import { scrollToTop } from "../../helpers/scrollToTop";
-import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
-import { ProductsFilter } from "../../components/ProductsFilter";
-import { ProductList } from "../../components/ProductList";
+import { AllProductsPageHeader } from "../../components/AllProductsPageHeader";
 import { Pagination } from "../../components/Pagination";
-import { ProductsSlider } from "../../components/ProductsSlider/ProductSlider";
+import { ProductsFilter } from "../../components/ProductsFilter";
+import { ProductsList } from "../../components/ProductsList";
+import { ProductsSlider } from "../../components/ProductsSlider";
+import { QuestionsBlock } from "../../components/QuestionsBlock/QuestionsBlock";
+import './heaters-page.scss';
+import { MainContext } from "../../context/MainContext";
+import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
 
 export const HeatersPage = () => {
   const {
-    isFiltersPageOpen,
-    currentPage,
     setCurrentPage,
+    isFiltersPageOpen,
   } = useContext(MainContext);
 
   useEffect (() => {
     setCurrentPage('Heaters');
-    scrollToTop();
   });
 
   return (
-    <div className="products__page">
+    <div className="heaters__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <CategoryInfo
-        currentPage={currentPage}
-      />
-      <ProductsFilter />
-      <ProductList />
-      <Pagination />
-      <ProductsSlider title="RECOMENDED PRODUCTS" />
+      <AllProductsPageHeader title="heaters" />
+      <div className="container">
+        <ProductsFilter />
+        <ProductsList />
+        <Pagination />
+        <ProductsSlider />
+      </div>
+      <QuestionsBlock title="heaters" />
     </div>
   );
 }

@@ -1,0 +1,91 @@
+@import '../../styles/utils/_vars';
+
+.product__card {
+  width: 288px;
+  display: flex;
+}
+
+.product__link {
+  position: relative;
+  padding-inline: 8px;
+  padding-bottom: 44px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $neutralN100;
+}
+
+.product__code {
+  margin-bottom: 8px;
+  text-align: end;
+  color: $neutralN300;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.product__img {
+  margin-bottom: 16px;
+}
+
+.product__type {
+  margin-bottom: 6px;
+  color: $neutralN350;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.product__name {
+  margin-bottom: 6px;
+  color: $neutralN400;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.product__color {
+  color: $neutralN350;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%
+}
+
+.product__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.old-conditions {
+  margin-bottom: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+.add-to-cart__button {
+  width: 48px;
+  height: 48px;
+  background-color: $primaryP500;
+  border-radius: 4px;
+  background-image: url("../../assets/images/icons/shopping-cart-white.svg");
+}
+
+.old-price {
+  color: $neutralN350;
+  font-size: 14px;
+  font-weight: 400;
+  left: 145%;
+  text-decoration: line-through;
+}
+
+.discount {
+  color: $dangerDN500;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.current-price {
+  color: $neutralN500;
+  font-size: 24px;
+  font-weight: 500;
+  left: 120%;
+}

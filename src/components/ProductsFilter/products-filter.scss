@@ -1,0 +1,29 @@
+@import '../../styles/utils/_vars';
+
+.products-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 32px;
+}
+
+.filters-open__button {
+  height: 44px;
+  gap: 8px;
+  width: 100%;
+  color: $neutralN0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &::after {
+    content: "";
+    background-image: url("../../assets/images/icons/filters-button.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

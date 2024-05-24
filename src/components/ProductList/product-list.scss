@@ -1,3 +1,9 @@
+@import '../../styles/utils/mixins.scss';
+
 .product__item {
   padding-inline: 16px;
+
+  @include onTablet {
+    width: 256px;
+  }
 }

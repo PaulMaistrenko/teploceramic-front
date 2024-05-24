@@ -1,0 +1,55 @@
+@import '../../../styles/utils/_vars';
+
+.specifications-block {
+  &__title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: $neutralN500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+
+.specifications-clipped {
+  position: relative;
+  height: 142px;
+  overflow-y: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(#ffffff82, #ffffffd9, #ffffff);
+  }
+}
+
+.options__list {
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.options-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.option {
+  width: 50%;
+  color: $neutralN350;
+  font-weight: 400;
+
+  &__value {
+    color: $neutralN400;
+    font-weight: 500;
+  }
+}

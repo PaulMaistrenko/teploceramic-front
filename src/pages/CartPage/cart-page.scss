@@ -1,0 +1,37 @@
+@import '../../styles/utils/_vars';
+
+.cart__page {
+  padding-bottom: 80px;
+}
+
+.cart-items__list {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cart-page__actions {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-page__delete-button {
+  height: 40px;
+  display: flex;
+  gap: 8px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/icons/delete-icon.png");
+  }
+}
+
+.place-an-order__link {
+  height: 40px;
+}

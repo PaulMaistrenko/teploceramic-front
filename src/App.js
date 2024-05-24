@@ -1,15 +1,22 @@
 import { Outlet } from 'react-router-dom';
 import './App.scss';
 import { Header } from './components/Header';
-import { Menu } from './components/Menu';
+import { MenuPage } from './components/MenuPage';
 import { Footer } from './components/Footer';
+import classNames from 'classnames';
+import { useContext } from 'react';
+import { MainContext } from './context/MainContext';
 
 export const App = () => {
+  const {
+    isMenuOpen,
+    isFiltersPageOpen,
+  } = useContext(MainContext);
 
   return (
-    <div className="page__body">
+    <div className={classNames('app', {'app--background-dark': isMenuOpen || isFiltersPageOpen})}>
       <Header />
-      <Menu />
+      <MenuPage />
       <main className="main-content">
         <Outlet />
       </main>
@@ -17,3 +24,4 @@ export const App = () => {
     </div>
   );
 }
+

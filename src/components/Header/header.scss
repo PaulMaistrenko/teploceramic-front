@@ -1,0 +1,26 @@
+.header__content {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-open__button {
+  width: 24px;
+  background-image: url("../../assets/images/icons/menu-open-button.svg");
+}
+
+.menu-close__button {
+  width: 24px;
+  background-image: url("../../assets/images/icons/menu-close-button.svg");
+}
+
+.header__main-logo {
+  height: 44px;
+  width: 154px;
+  background-image: url("../../assets/images/icons/main-logo.svg");
+}
+
+.schoping-cart__link {
+  width: 24px;
+  background-image: url("../../assets/images/icons/shopping-cart.svg");
+}

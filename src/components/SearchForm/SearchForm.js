@@ -18,7 +18,7 @@ export const SearchForm = () => {
         value={query}
         onChange={(event) => setQuery(event.target.value)}
       />
-      <div className="search__icon icon" />
+      <div className="search__icon" />
     </form>
   );
 }

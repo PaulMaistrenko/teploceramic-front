@@ -1,16 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import './product-details-page.scss';
 import { useContext, useRef, useState } from 'react';
-import { MainContext } from '../../context/MainContext';
 import { detailTypes } from '../../variables';
 import classNames from 'classnames';
 import { ProductDetailsCard } from '../../components/ProductDetailsCard';
-import { DescriptionInfoBlock } from '../../components/DescriptionInfoBlock/DescriptionInfoBlock';
-import { ProductsSlider } from '../../components/ProductsSlider/ProductSlider';
-import { QuestionsBlock } from '../../components/QuestionsBlock';
-import { SpecificationsInfoBlock } from '../../components/SpecificationsInfoBlock/SpecificationInfoBlock';
-import { AvailabilityBlock } from '../../components/AvailabilityBlock/AvailabilityBlock';
-import { ShipingAndPaymentBlock } from '../../components/ShipingAndPaymentBlock/ShipingAndPaymentBlock';
+import { Description } from '../../components/ProductDetails/Description';
+import { ProductsSlider } from '../../components/ProductsSlider';
+import { Specifications } from '../../components/ProductDetails/Specifications';
+import { Availability } from '../../components/ProductDetails/Availability';
+import { ShipingAndPayment } from '../../components/ProductDetails/ShipingAndPayment';
+import { MainContext } from '../../context/MainContext';
 
 export const ProductDetailsPage = () => {
   const {
@@ -53,15 +52,15 @@ export const ProductDetailsPage = () => {
   };
 
   return (
-    <div className="product__details-page">
+    <div className="product-details__page">
       <div className="container">
-        <div className="product__page-path">
+        <div className="product-page__path">
           <button
             type="button"
             className="back__button icon"
             onClick={() => navigate(-1)}
           />
-          <p className="current__page text-color--neutralN300">{currentPage}</p>
+          <p className="current__page">{currentPage}</p>
         </div>
         <ul
           className="product-info__nav-list"
@@ -96,37 +95,40 @@ export const ProductDetailsPage = () => {
         </div>
       </div>
       <ProductDetailsCard detailType={detailType} />
-      <section className="product__details-section">
-        { detailType === 'About the product' && <DescriptionInfoBlock detailType={detailType} isClippedDescription={isClippedDescription} />}
-        { detailType === 'Description' && <DescriptionInfoBlock detailType={detailType} isClippedDescription={isClippedDescription} />}
-        { detailType === 'About the product' && (
-          <button
-            className="more-info__button main__text--medium text-color--neutralN400"
-            onClick={() => setIsClippedDescription(!isClippedDescription)}
-          >
-            More info
-          </button>
-          )
-        }
-      </section>
-      <section className="product__details-section">
-        { detailType === 'About the product' && <SpecificationsInfoBlock detailType={detailType} isClippedSpecification={isClippedSpecification} />}
-        { detailType === 'Specifications' && <SpecificationsInfoBlock detailType={detailType} isClippedSpecification={isClippedSpecification} />}
-        { detailType === 'About the product' && (
-          <button
-            className="more-info__button main__text--medium text-color--neutralN400"
-            onClick={() => setIsClippedSpecification(!isClippedSpecification)}
-          >
-            More info
-          </button>
-          )
-        }
-      </section>
-      { detailType === 'Availability' && <AvailabilityBlock /> }
-      { detailType === 'Shipping and payment' && <ShipingAndPaymentBlock /> }
-      <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
-      <ProductsSlider title="RECOMENDED PRODUCTS" />
-      <QuestionsBlock />
+      <div className="container">
+        <section className="product-details__section">
+          { detailType === 'About the product' && <Description detailType={detailType} isClippedDescription={isClippedDescription} />}
+          { detailType === 'Description' && <Description detailType={detailType} isClippedDescription={isClippedDescription} />}
+          { detailType === 'About the product' && (
+            <button
+              className="more-info__button"
+              onClick={() => setIsClippedDescription(!isClippedDescription)}
+            >
+              More info
+            </button>
+            )
+          }
+        </section>
+        <section className="product-details__section">
+          { detailType === 'About the product' && <Specifications detailType={detailType} isClippedSpecification={isClippedSpecification} />}
+          { detailType === 'Specifications' && <Specifications detailType={detailType} isClippedSpecification={isClippedSpecification} />}
+          { detailType === 'About the product' && (
+            <button
+              className="more-info__button"
+              onClick={() => setIsClippedSpecification(!isClippedSpecification)}
+            >
+              More info
+            </button>
+            )
+          }
+        </section>
+        { detailType === 'Availability' && <Availability /> }
+        { detailType === 'Shipping and payment' && <ShipingAndPayment /> }
+        <div className="product-details__sliders">
+          <ProductsSlider title="ACCESSORIES FOR THIS PRODUCT" />
+          <ProductsSlider title="RECOMENDED PRODUCTS" />
+        </div>
+      </div>
     </div>
   );
 }

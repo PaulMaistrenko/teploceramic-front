@@ -1,1 +1,1 @@
-export * from './SuspendetHeatersPage';
+export * from './SuspendedHeatersPage';

@@ -1,33 +1,36 @@
-import { useContext } from "react";
-import { NavLink } from "react-router-dom";
-import { MainContext } from "../../context/MainContext";
+import { Link } from 'react-router-dom';
+import './header.scss';
+import { useContext } from 'react';
+import { MainContext } from '../../context/MainContext';
 
 export const Header = () => {
   const {
     isMenuOpen,
     setIsMenuOpen,
+    setIsSelectLangOpen,
   } = useContext(MainContext);
 
   return (
-    <header className="header container">
+    <header className="header">
+      <div className="container">
         <div className="header__content">
-          {isMenuOpen 
+          {isMenuOpen
             ? <button
-                className="menu-close__button icon"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="menu-close__button bgd-icon"
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen)
+                  setIsSelectLangOpen(false)
+                }}
               />
             : <button
-                className="menu-open__button icon"
+                className="menu-open__button bgd-icon"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
           }
-          <NavLink
-            to="/"
-            className="header__logo icon"
-            onClick={() => setIsMenuOpen(false)}
-          />
-          <NavLink to="/cart" className="cart-page__link icon"></NavLink>
+          <Link to="/" className="header__main-logo bgd-icon" />
+          <Link to="/cart" className="schoping-cart__link bgd-icon" />
         </div>
-      </header>
+      </div>
+    </header>
   );
 }

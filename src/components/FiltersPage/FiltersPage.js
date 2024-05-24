@@ -11,16 +11,16 @@ export const FiltersPage = () => {
     <div className="filters__page">
       <div className="container">
         <button
-         className="filters__header extra-large__text--medium"
+          className="filters-close__button"
           onClick={() => setIsFiltersPageOpen(false)}
         >
           Filters
         </button>
-        <div className="filters__types-list">
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Construction</p>
+        <ul className="filter-types__list">
+          <li className="filter-type__item">
+            <p className="filter-type__title">Construction</p>
             <div className="filter__values">
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -31,11 +31,11 @@ export const FiltersPage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Control</p>
+          </li>
+          <li className="filter-type__item">
+            <p className="filter-type__title">Control</p>
             <div className="filter__values">
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -46,11 +46,11 @@ export const FiltersPage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Drying area</p>
+          </li>
+          <li className="filter-type__item">
+            <p className="filter-type__title">Drying area</p>
             <div className="filter__values">
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -60,7 +60,7 @@ export const FiltersPage = () => {
                   0,45 m²
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -70,7 +70,7 @@ export const FiltersPage = () => {
                   0,9 m²
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -80,7 +80,7 @@ export const FiltersPage = () => {
                   1,5 m²
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -90,7 +90,7 @@ export const FiltersPage = () => {
                   2,5 m²
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -101,11 +101,11 @@ export const FiltersPage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Power</p>
+          </li>
+          <li className="filter-type__item">
+            <p className="filter-type__title">Power</p>
             <div className="filter__values">
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -115,7 +115,7 @@ export const FiltersPage = () => {
                   2 x 1000 w
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -125,7 +125,7 @@ export const FiltersPage = () => {
                   500 w
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -135,7 +135,7 @@ export const FiltersPage = () => {
                   700 w
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -146,11 +146,11 @@ export const FiltersPage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Size</p>
+          </li>
+          <li className="filter-type__item">
+            <p className="filter-type__title">Size</p>
             <div className="filter__values">
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -160,7 +160,7 @@ export const FiltersPage = () => {
                   30 x 37 x 30 cm
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -170,7 +170,7 @@ export const FiltersPage = () => {
                   37 x 40 x 37 cm
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -180,7 +180,7 @@ export const FiltersPage = () => {
                   42 x 55 x 38 cm
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -190,7 +190,7 @@ export const FiltersPage = () => {
                   54 x 75 x 107 cm
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -200,7 +200,7 @@ export const FiltersPage = () => {
                   54 x 75 x 107 cm
                 </button>
               </div>
-              <div className="filter__value  main__text--regular text-color--neutralN300">
+              <div className="filter__value">
                 <button
                   className="filter__button"
                   type="radio"
@@ -211,9 +211,9 @@ export const FiltersPage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="filter-type">
-            <p className="filter-type__title large__text--medium text-color--neutralN400">Price, €</p>
+          </li>
+          <li className="filter-type__item">
+            <p className="filter-type__title">Price, €</p>
             <div className="submit-form__wrapper">
               <form className="price__interval">
                 <div className="price__values">
@@ -234,7 +234,7 @@ export const FiltersPage = () => {
                     defaultValue="00000"
                   />
                 </div>
-                <button className="price__submit-button text-color--neutralN400">OK</button>
+                <button className="price__submit-button">OK</button>
               </form>
             </div>
             <div className="price-range">
@@ -244,9 +244,9 @@ export const FiltersPage = () => {
               <button className="price-range__handle min" />
               <button className="price-range__handle max" />
             </div>
-          </div>
-        </div>
-        <button className="secondary__button-small secondary__button main__text--medium">Clear all filters</button>
+          </li>
+        </ul>
+        <button className="clear-all-filters__button button secondary-button">Clear all filters</button>
       </div>
     </div>
   );
