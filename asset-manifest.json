@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/teploceramic-front/static/css/main.9b3cbefe.css",
-    "main.js": "/teploceramic-front/static/js/main.421e5bf2.js",
+    "main.css": "/teploceramic-front/static/css/main.9f53d433.css",
+    "main.js": "/teploceramic-front/static/js/main.6b253591.js",
     "static/media/certificates-1.png": "/teploceramic-front/static/media/certificates-1.2ff7777badd99632196f.png",
     "static/media/bathroom.png": "/teploceramic-front/static/media/bathroom.82c90c8e14d896477d60.png",
     "static/media/fact-img-1.png": "/teploceramic-front/static/media/fact-img-1.18c9c330a4bad2003a5e.png",
@@ -41,11 +41,11 @@
     "static/media/arrow-left-n400.svg": "/teploceramic-front/static/media/arrow-left-n400.bd445b21566c8aa34786.svg",
     "static/media/arrow-right-n400.svg": "/teploceramic-front/static/media/arrow-right-n400.796d288275d41cd1949b.svg",
     "static/media/minus-button.svg": "/teploceramic-front/static/media/minus-button.b992eb3ecc2a00746a9a.svg",
-    "main.9b3cbefe.css.map": "/teploceramic-front/static/css/main.9b3cbefe.css.map",
-    "main.421e5bf2.js.map": "/teploceramic-front/static/js/main.421e5bf2.js.map"
+    "main.9f53d433.css.map": "/teploceramic-front/static/css/main.9f53d433.css.map",
+    "main.6b253591.js.map": "/teploceramic-front/static/js/main.6b253591.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b3cbefe.css",
-    "static/js/main.421e5bf2.js"
+    "static/css/main.9f53d433.css",
+    "static/js/main.6b253591.js"
   ]
 }
