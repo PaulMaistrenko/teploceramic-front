@@ -8,6 +8,7 @@ import { QuestionsBlock } from "../../components/QuestionsBlock/QuestionsBlock";
 import './accessories.scss';
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
+import { scrollToTop } from "../../services/scrollToTop";
 
 export const AccessoriesPage = () => {
   const {
@@ -17,19 +18,20 @@ export const AccessoriesPage = () => {
 
   useEffect (() => {
     setCurrentPage('Accessories');
+    scrollToTop();
   });
 
   return (
     <div className="accessories__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <AllProductsPageHeader title="accessories" />
+      <AllProductsPageHeader title="Accessories" />
       <div className="container">
         <ProductsFilter />
         <ProductsList />
         <Pagination />
         <ProductsSlider />
       </div>
-      <QuestionsBlock title="accessories" />
+      <QuestionsBlock title="Accessories" />
     </div>
   );
 }

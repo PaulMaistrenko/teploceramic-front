@@ -16,6 +16,7 @@ import { MainProvider } from './context/MainContext';
 import { ProductDetailsPage } from './pages/ProductDetailsPage';
 import { HelpPage } from './pages/HelpPage';
 import { PlaceAnOrderPage } from './pages/PlaceAnOrderPage/PlaceAnOrderPage';
+import { FaqPage } from './pages/FaqPage/FaqPage';
 
 export const Root = () => (
   <Router>
@@ -46,7 +47,14 @@ export const Root = () => (
           <Route path="cart" element={<CartPage />} />
           <Route path="place an order" element={<PlaceAnOrderPage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="help" element={<HelpPage />} />
+          <Route path="help">
+            <Route index element={<HelpPage />} />
+            <Route path=":dehydrators" element={<FaqPage />} />
+            <Route path=":heaters" element={<FaqPage />} />
+            <Route path=":suspended heaters" element={<FaqPage />} />
+            <Route path=":towel warmers" element={<FaqPage />} />
+            <Route path=":other" element={<FaqPage />} />
+          </Route>
         </Route>
       </Routes>
     </MainProvider>

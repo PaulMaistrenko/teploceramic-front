@@ -5,6 +5,7 @@ import { MainContext } from '../../context/MainContext';
 import { CartItem } from '../../components/CartItem';
 import { OrderTotal } from '../../components/OrderTotal';
 import ukr_flag from '../../assets/images/blocks/place-an-order/flags/ukr.svg';
+import { scrollToTop } from '../../services/scrollToTop';
 
 export const PlaceAnOrderPage = () => {
   const {
@@ -13,6 +14,7 @@ export const PlaceAnOrderPage = () => {
 
   useEffect (() => {
     setCurrentPage('Place an order');
+    scrollToTop();
   });
 
   return (

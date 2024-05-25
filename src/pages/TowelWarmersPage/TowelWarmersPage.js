@@ -7,6 +7,8 @@ import { ProductsSlider } from "../../components/ProductsSlider";
 import { QuestionsBlock } from "../../components/QuestionsBlock/QuestionsBlock";
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
+import './towel-warmers.scss';
+import { scrollToTop } from "../../services/scrollToTop";
 
 export const TowelWarmersPage = () => {
   const {
@@ -16,19 +18,20 @@ export const TowelWarmersPage = () => {
 
   useEffect (() => {
     setCurrentPage('Towel warmers');
+    scrollToTop();
   });
 
   return (
     <div className="towel-warmers__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <AllProductsPageHeader title="towel warmers" />
+      <AllProductsPageHeader title="Towel warmers" />
       <div className="container">
         <ProductsFilter />
         <ProductsList />
         <Pagination />
         <ProductsSlider />
       </div>
-      <QuestionsBlock title="towel warmers" />
+      <QuestionsBlock title="Towel warmers" />
     </div>
   );
 }

@@ -15,6 +15,7 @@ export const HomePage = () => {
 
   useEffect (() => {
     setCurrentPage('Home');
+    scrollToTop();
   });
 
   return (
@@ -38,7 +39,6 @@ export const HomePage = () => {
               <Link
                 to="/dehydrators"
                 className="category__link"
-                onClick={scrollToTop}
               >
                 <div className="category__img dehydrators" />
                 <p className="category__title">Dehydrators</p>
@@ -48,7 +48,6 @@ export const HomePage = () => {
               <Link
                 to="/heaters"
                 className="category__link"
-                onClick={scrollToTop}
               >
                 <div className="category__img heaters" />
                 <p className="category__title">Heaters</p>
@@ -58,7 +57,6 @@ export const HomePage = () => {
               <Link
                 to="/suspended heaters"
                 className="category__link"
-                onClick={scrollToTop}
               >
                 <div className="category__img suspended-heaters" />
                 <p className="category__title">Suspended heaters</p>
@@ -68,7 +66,6 @@ export const HomePage = () => {
               <Link
                 to="/towel warmers"
                 className="category__link"
-                onClick={scrollToTop}
               >
                 <div className="category__img towel-warmers" />
                 <p className="category__title">Towel warmers</p>
@@ -78,7 +75,6 @@ export const HomePage = () => {
               <Link
                 to="/accessories"
                 className="category__link"
-                onClick={scrollToTop}
               >
                 <div className="category__img accessories" />
                 <p className="category__title">Accessories</p>

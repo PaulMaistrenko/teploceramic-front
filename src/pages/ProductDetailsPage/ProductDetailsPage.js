@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './product-details-page.scss';
-import { useContext, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { detailTypes } from '../../variables';
 import classNames from 'classnames';
 import { ProductDetailsCard } from '../../components/ProductDetailsCard';
@@ -10,11 +10,16 @@ import { Specifications } from '../../components/ProductDetails/Specifications';
 import { Availability } from '../../components/ProductDetails/Availability';
 import { ShipingAndPayment } from '../../components/ProductDetails/ShipingAndPayment';
 import { MainContext } from '../../context/MainContext';
+import { scrollToTop } from '../../services/scrollToTop';
 
 export const ProductDetailsPage = () => {
   const {
     currentPage,
   } = useContext(MainContext);
+
+  useEffect (() => {
+    scrollToTop();
+  });
 
   const scrollWidth = useRef(null);
   const navigate = useNavigate();

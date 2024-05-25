@@ -8,6 +8,7 @@ import { QuestionsBlock } from "../../components/QuestionsBlock/QuestionsBlock";
 import './suspended-heaters-page.scss';
 import { MainContext } from "../../context/MainContext";
 import { FiltersPage } from "../../components/FiltersPage/FiltersPage";
+import { scrollToTop } from "../../services/scrollToTop";
 
 export const SuspendedHeatersPage = () => {
   const {
@@ -17,19 +18,20 @@ export const SuspendedHeatersPage = () => {
 
   useEffect (() => {
     setCurrentPage('Suspended heaters');
+    scrollToTop();
   });
 
   return (
     <div className="suspended-heaters__page">
       {isFiltersPageOpen && <FiltersPage />}
-      <AllProductsPageHeader title="suspended heaters" />
+      <AllProductsPageHeader title="Suspended heaters" />
       <div className="container">
         <ProductsFilter />
         <ProductsList />
         <Pagination />
         <ProductsSlider />
       </div>
-      <QuestionsBlock title="suspended heaters" />
+      <QuestionsBlock title="Suspended heaters" />
     </div>
   );
 }

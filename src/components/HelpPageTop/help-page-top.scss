@@ -1,0 +1,22 @@
+@import '../../styles/utils/_vars';
+
+.help-page__top {
+  padding-block: 48px;
+  border-bottom: 2px solid $neutralN400;
+}
+
+.help-page__title {
+  text-align: center;
+  color: $primaryP500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.help-page__link {
+  position: absolute;
+  transform: translateY(20%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/images/icons/arrow-left-n300.svg");
+}

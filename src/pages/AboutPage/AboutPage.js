@@ -3,8 +3,20 @@ import fact_img_1 from "../../assets/images/blocks/about/fact-img-1.png";
 import fact_img_2 from "../../assets/images/blocks/about/fact-img-2.png";
 import fact_img_3 from "../../assets/images/blocks/about/fact-img-3.png";
 import certificate_img_1 from "../../assets/images/blocks/about/certificates/certificates-1.png";
+import { useContext, useEffect } from 'react';
+import { MainContext } from '../../context/MainContext';
+import { scrollToTop } from '../../services/scrollToTop';
 
 export const AboutPage = () => {
+  const {
+    setCurrentPage,
+  } = useContext(MainContext);
+
+  useEffect (() => {
+    setCurrentPage('About us');
+    scrollToTop();
+  });
+
   return (
     <div className="about__page">
       <section className="about__top">

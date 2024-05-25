@@ -1,0 +1,50 @@
+@import '../../styles/utils/_vars';
+
+.faq__page {
+  background-color: $neutralN500;
+}
+
+.faq-page__content {
+  padding-top: 31px;
+  padding-bottom: 64px;
+}
+
+.faq-page__title {
+  margin-bottom: 32px;
+  text-align: center;
+  color: $neutralN50;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq__item {
+  border-bottom: 1px solid $neutralN300;
+}
+
+.faq__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__text {
+  padding-bottom: 8px;
+  text-align: start;
+  color: $neutralN300;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.faq__visibility-handler {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/images/icons/arrow-down-n300.svg");
+}

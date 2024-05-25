@@ -7,9 +7,9 @@ export const detailTypes = [
 ]
 
 export const productCategories = {
-  'dehydrators': ['dehydrator', 'dehydrators'],
-  'heaters': ['heater', 'heaters'],
-  'suspended heaters': ['suspended heater', 'suspended heaters'],
-  'towel warmers': ['towel warmer', 'towel warmers'],
-  'accessories': ['accessory', 'accessories'],
+  'Dehydrators': ['dehydrator', 'dehydrators'],
+  'Heaters': ['heater', 'heaters'],
+  'Suspended heaters': ['suspended heater', 'suspended heaters'],
+  'Towel warmers': ['towel warmer', 'towel warmers'],
+  'Accessories': ['accessory', 'accessories'],
 }

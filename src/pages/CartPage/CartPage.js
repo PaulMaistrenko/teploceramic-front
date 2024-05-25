@@ -6,6 +6,7 @@ import { CartPageTop } from '../../components/CartPageTop';
 import { useContext, useEffect } from 'react';
 import { MainContext } from '../../context/MainContext';
 import { OrderTotal } from '../../components/OrderTotal';
+import { scrollToTop } from '../../services/scrollToTop';
 
 export const CartPage = () => {
   const {
@@ -14,6 +15,7 @@ export const CartPage = () => {
 
   useEffect (() => {
     setCurrentPage('Cart page');
+    scrollToTop();
   });
 
   return (
