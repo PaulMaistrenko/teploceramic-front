@@ -1,4 +1,5 @@
 @import '../../styles/utils/_vars';
+@import '../../styles/utils/_mixins';
 
 /* slogan section */
 
@@ -7,6 +8,10 @@
   background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../../assets/images/blocks/slogan/bathroom.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include onTablet {
+    padding-block: 142px;
+  }
 }
 
 .slogan__title {
@@ -19,6 +24,12 @@
   span {
     color: $primaryP500;
   }
+
+  @include onTablet {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 115%;
+  }
 }
 
 .slogan__text {
@@ -27,6 +38,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 145%;
+
+  @include onTablet {
+    margin-bottom: 46px;
+    width: 479px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+  }
 }
 
 .slogan__button {
@@ -36,6 +55,11 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
+
+  @include onTablet {
+    width: 256px;
+    height: 52px;
+  }
 }
 
 /* end of slogan section */
@@ -71,6 +95,10 @@
   border: 1px solid $neutralN200;
   border-radius: 4px;
   background-color: $neutralN50;
+
+  @include onTablet {
+    width: 210px;
+  }
 }
 
 .category__link {

@@ -2,6 +2,7 @@ import { ProductCard } from '../ProductCard';
 import './products-list.scss';
 
 export const ProductsList = () => {
+
   return (
     <section className="products-section">
       <ul className="products__list">
